@@ -5,7 +5,7 @@ import './HolidaySection.css'
 function HolidaySection() {
   return (
     <section className="holidays-sec" data-aos="fade-up">
-    <div className="container">
+    <div id='ram' className="container">
       <div className="row">
         <div className="col-lg-6 col-sm-6">
           <div className="holi-heading">

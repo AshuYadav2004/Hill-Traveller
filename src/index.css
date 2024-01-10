@@ -8,6 +8,28 @@
     font-family: 'Poppins', sans-serif;
 }
 
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
+input::placeholder{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+li{
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
 li {
     list-style: none;
 }
@@ -16,3 +38,7 @@ a {
     text-decoration: none;
     font-family: 'SpaceGrotesk-Regular';
 }
+
+
+
+/* responsive */

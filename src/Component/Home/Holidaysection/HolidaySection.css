@@ -36,6 +36,7 @@ section.holidays-sec {
 
 .holidays-sec .holi-heading .learn-more-btn {
     margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .holidays-sec .holi-heading .learn-more-btn a {
@@ -86,3 +87,10 @@ section.holidays-sec {
         margin: 20px 0px;
     }
 }
+
+@media screen and (min-width:500px) and (max-width:750px)  {
+    #ram{
+    width: 100%;
+}
+}
+
