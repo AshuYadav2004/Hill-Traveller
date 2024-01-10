@@ -13,7 +13,7 @@ const Layout = ({ children }) => (
   <>
   <PopupForm/>
   <FixBottomNav/>
-   {/* <EnquireFormModal/> */}
+   <EnquireFormModal/>
     <Header />
     {children}
     <Footer />

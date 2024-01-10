@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './AddDestination.css'
 import { Link } from 'react-router-dom'
+import { destination } from '../../../api/Destination';
 
 function AddDestination() {
 
@@ -94,13 +95,44 @@ function AddDestination() {
    const newobj = generateObject(InputNum)
    setDayItinearies(newobj)
    }
+
+   const data = {
+    catagory,
+    Bannerdata,
+    Whysectiondata,
+    BestTings,
+    DayItinearies,
+    ContactSection,
+
+   }
+   const SubmitForm = async (e)=>{
+    e.preventDefault()
+    console.log(data)
+  
+    // const formData = new FormData();
+
+    // Images.forEach((i)=>{
+    //   formData.append(i.name,i.File,i.name)
+    // })
+
+    const result = await destination.AddDestination(Images,data)
+    console.log(result)
+
+    
+
+
+
+     
+    
+      
+   }
  
 
   return (
     <div className='papa'>
 
     <div className="container">  
-    <form id="contact" action="" method="post">
+    <form id="contact">
           <h2>Add Destination</h2>
         
      <fieldset>
@@ -272,9 +304,9 @@ function AddDestination() {
         }} value={ContactSection.description} required></textarea>
       </fieldset>
       <fieldset>
-        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        <button name="submit" type="submit" id="contact-submit" onClick={SubmitForm}>Submit</button>
       </fieldset>
-      <p className="copyright">Designed by </p>
+
     </form>
   </div>
   </div>
