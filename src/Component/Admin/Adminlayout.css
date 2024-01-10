@@ -1,0 +1,15 @@
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    height: 100vh;
+    position: relative;
+  }
+  
+  .main-content {
+    /* padding: 50px;  */
+    /* border: 2px solid red; */
+
+  }
+  

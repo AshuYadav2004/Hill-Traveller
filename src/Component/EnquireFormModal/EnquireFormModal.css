@@ -1,0 +1,168 @@
+.enquire_popup .my_container {
+    background: #00000030;
+    padding: 0px 30px 30px;
+    color: white;
+
+}
+
+#full-form-cross{
+    color: white;
+}
+
+.enquire_popup .my_container input::placeholder {
+    color: white;
+}
+
+.enquire_popup .my_container header {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+}
+
+.enquire_popup .my_container .form-outer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.enquire_popup .my_container .form-outer form {
+    display: flex;
+    width: calc(100% * var(--stepNumber));
+}
+
+.enquire_popup .form-outer form .page {
+    width: calc(100% / var(--stepNumber));
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.enquire_popup .form-outer form .page .title {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.enquire_popup .field {
+    margin-top: 30px;
+    position: relative;
+}
+
+.modal-content {
+    background-color: #161616e6 !important;
+}
+
+.enquire_popup .field i {
+    position: absolute;
+    right: 0;
+    color: white;
+    font-size: 23px;
+    color: #888;
+    top: 10px;
+}
+
+.enquire_popup form .page .field .label {
+    position: absolute;
+    top: -30px;
+    font-weight: 500;
+}
+
+.enquire_popup form .page .field .form-control {
+    transition: border-color 150ms ease;
+    border-bottom: 2px solid #ffffff !important;
+    background-color: #0000;
+    border-radius: 0px;
+    border: none;
+    padding: 10px;
+    color: #9b9b9b;
+}
+
+.enquire_popup form .page .field .form-control:focus {
+    box-shadow: none;
+    border: none;
+    border-bottom: 2px solid #ffffff !important;
+}
+
+.enquire_popup form .page .field .form-control.invalid-input {
+    border-color: 1px solid
+}
+
+.enquire_popup form .page .field button {
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'SpaceGrotesk';
+    background: #FF525D;
+    padding: 10px 30px;
+    border-radius: 4px;
+    border: none;
+    font-family: Poppins-Medium;
+    border: 1px solid #E1222E;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+.enquire_popup form .page .btns button.prev {
+    margin-right: 10px;
+    font-size: 17px;
+    border: 1px solid #ffffff;
+    background: none;
+}
+
+.enquire_popup form .page .btns button.next {
+    margin-left: 3px;
+}
+
+.enquire_popup .my_container .progress-bar {
+    display: none;
+    margin: 40px 0;
+    user-select: none;
+}
+
+.enquire_popup .my_container .progress-bar .step {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.enquire_popup .my_container .progress-bar .step p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .enquire_popup .my_container {
+        box-sizing: border-box;
+        border-radius: 0;
+    }
+}
+
+.enquire_popup .modal-title {
+    font-family: 'SpaceGrotesk-Regular';
+    color: #ffffff;
+}
+
+.enquire_popup .modal-header {
+    background-color: #000000;
+}
+
+.enquire_popup .btn-close {
+    background: transparent url(../img/close_icon.png) center/1em auto no-repeat;
+}
+
+.modal-backdrop.show {
+    opacity: .5;
+    background: #ffffff;
+}
+
+.enquire_popup .field.btns {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}

@@ -1,0 +1,214 @@
+.munnar_us {
+    margin-top: 60px;
+}
+
+.munnar_us .container {
+    max-width: 1200px;
+}
+
+.munnar_us .munnar_img img {
+    width: 100%;
+}
+
+.munnar_us .munnar_img_wrp {
+    position: relative;
+}
+
+.munnar_play_icon {
+    text-align: center;
+}
+
+.munnar_us .munnar_play_icon {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 140px;
+}
+
+.munnar_us .munnar_play_icon img {
+    width: 150px;
+}
+
+.munnar_us .why_munnar_parent {
+    margin-left: 25px;
+}
+
+.munnar_us .why_munnar_parent .why_munnar_pera {
+    margin-top: 12px;
+}
+
+/* .munnar_us .why_munnar_parent .why_munnar_pera p {
+    margin-bottom: 5px;
+} */
+/* YourComponent.css */
+.content-container {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: max-height 0.3s ease; /* Added transition for smooth animation */
+  }
+  
+  .content-container.expanded {
+    max-height: 1000px; /* Adjust as needed based on your content length */
+  }
+  
+  .content-container p {
+    margin: 0; /* Reset default margin for p */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+  
+  .read-more-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+.munnar_us .why_munnar_flex {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.munnar_us .munnar_child {
+    width: 13%;
+}
+
+.munnar_us .munnar_child .munnar_icon img {
+    width: 50px;
+    transition: all 500ms linear 0.1s;
+    transform: scale(1) rotateY(0deg);
+}
+
+.munnar_us .munnar_child:hover img {
+    transform: scale(0.9) rotateY(360deg);
+}
+
+.munnar_us .munnar_bottom_text p {
+    font-size: 13px;
+}
+
+.munnar_us .munnar_bottom_text {
+    margin-top: 15px;
+}
+
+.moreless-button{
+    color:#cf3c32;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+
+
+
+
+/* enquiry btn */
+.munnar-enquire-btn {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(0 107 179);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .munnar-enquire-btn:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .munnar-enquire-btn:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .munnar-enquire-btn:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .munnar-enquire-btn::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  
+
+  /* responsivenesss */
+  @media screen and (max-width:480px) {
+    .munnar_us {
+        margin-top: 40px;
+        /* border: 2px solid red; */
+        max-width: 100vw;
+
+    }
+    .munnar_us .munnar_play_icon {
+        position: absolute;
+        bottom: 80px;
+    }
+    .munnar_us .why_munnar_parent {
+        margin-left: 0px;
+        text-align: center;
+    }
+    .munnar_us .why_munnar_parent .why_munnar_flex {
+        width: 100%;
+    }
+    .munnar_us .munnar_img_wrp {
+        margin-top: 10px;
+       max-width: 100vw;
+    }
+    .munnar_us .munnar_child {
+        width: 32%;
+    }
+    .munnar-enquire-btn{
+        border: 2px solid red;
+        margin-left: 70px;
+    }
+  }

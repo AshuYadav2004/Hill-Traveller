@@ -1,0 +1,164 @@
+.banner{
+    /* width: 100vw; */
+    /* border: 2px solid red; */
+    padding: 0;
+    overflow: hidden;
+}
+
+.carousel .carousel-indicators li{
+	
+	display:inline-block;
+	width:10px;
+	height:10px;
+	text-indent: -99px;
+	cursor:pointer;
+	border:1px solid #fff;
+	background:#fff;
+	border-radius:2px;
+    /* border: 2px solid red; */
+	
+	
+}
+
+.inner-banenr{
+    border: 2px solid rgb(12, 255, 134);
+    width: 100%;
+}
+
+
+.carousel-caption{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+.carousel-caption h1{
+    font-size: 5rem;
+}
+.carousel-caption p{
+    font-size: 1.3rem;
+}
+
+
+
+
+@keyframes floating {
+    0%, 100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @keyframes particles {
+    0% {
+      transform: translateZ(0, 0);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: translate(190px, 50px);
+      opacity: 0;
+    }
+  }
+  
+  .button {
+    position: relative;
+    background: rgba(57, 57, 57, 0.7);
+    display: inline-block;
+    background-size: 200% auto;
+    border: 1px solid;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    animation: floating 3s ease-in-out infinite;
+    transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #FF7730;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    width: 5px;
+    height: 5px;
+    background: #FF7730;
+    animation: particles 2s infinite;
+  }
+  
+  .button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .button:hover {
+    color: #FFB900;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+    background-position: right center;
+    background: linear-gradient(to right, #FFB900, #FF7730);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .carousel-caption h1{
+        font-size: 2rem;
+    }
+    .carousel-caption p{
+        font-size: 1rem;
+    }
+    .carousel-caption{
+        position: absolute;
+        top: 0%;
+        left: 20%;
+    }
+    .button {
+        position: relative;
+        background: rgba(57, 57, 57, 0.7);
+        display: inline-block;
+        background-size: 200% auto;
+        border: 1px solid;
+        border-radius: 25px;
+        color: white;
+        padding: 2px 10px;
+        font-size: 10px;
+        text-transform: uppercase;
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+        animation: floating 3s ease-in-out infinite;
+        transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        bottom: 15px;
+      }
+      .button::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        border-radius: 30px;
+        box-shadow: 0 0 20px #FF7730;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        width: 2px;
+        height: 2px;
+        background: #FF7730;
+        animation: particles 2s infinite;
+      }
+  }

@@ -1,0 +1,31 @@
+.uttrakhand-destination .inspired-img-wrp {
+    position: relative;
+    overflow: hidden;
+    border-radius: 594px 149px;
+}
+
+.uttrakhand-destination .inspired-img-wrp:hover img {
+    transform: scale(1.05);
+}
+
+.uttrakhand-destination .inspired-img-wrp img {
+    width: 100%;
+    transition: .5s;
+}
+
+.uttrakhand-destination .inspired-img-wrp .inspired-text {
+    position: absolute;
+    bottom: 0px;
+    color: #ffffff;
+    padding: 0px 40px;
+    background: linear-gradient(rgb(97 96 96 / 0%), rgb(0 0 0 / 68%));
+}
+
+.uttrakhand-destination .inspired-img-wrp .inspired-text h5 {
+    font-family: 'SpaceGrotesk';
+    font-size: 32px;
+}
+
+.uttrakhand-destination .inspired-img-wrp .inspired-text p {
+    font-size: 14px;
+}

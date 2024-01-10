@@ -1,0 +1,157 @@
+section.inquirie {
+    margin-top: 50px;
+}
+
+.inquirie .inquirie-heading {
+    padding-top: 60px;
+}
+
+.inquirie .inquirie-list .accordion-item {
+    border-bottom: 2px solid !important;
+    border: none;
+    font-family: SpaceGrotesk;
+    outline: none;
+    color: #000000;
+}
+
+.inquirie .inquirie-heading .heading h2 {
+    position: relative;
+}
+
+.inquirie .inquirie-list .accordion-button::after {
+    position: absolute;
+    right: -40px;
+}
+
+.inquirie .inquirie-list button.accordion-button:focus {
+    color: #000;
+    background: none;
+    box-shadow: none;
+}
+
+.inquirie .inquirie-list .accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.inquirie .inquirie-list .accordion-item:last-of-type {
+    border-radius: 0px;
+}
+
+.inquirie .inquirie-list .accordion-body {
+    padding: 0rem 1.25rem;
+    font-family: 'Poppins-Regular';
+}
+
+.inquirie .inquirie-list .accordion-item .accordion-button {
+    font-size: 19px;
+}
+
+.faq-button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(0 107 179);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .faq-button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .faq-button:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .faq-button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .faq-button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  
+
+
+@media screen and (max-width:480px) {
+    section.inquirie {
+        text-align: center;
+        margin-top: -50px;
+    }
+    /* .inquirie .inquirie-heading {
+        padding-top: 0px;
+        margin-bottom: 30px;
+        /* border: 2px solid red; */
+        .inquirie .inquirie-heading span{
+            border: 2px solid green;
+            margin-right: 150px;;
+        } */
+        .inquirie .inquirie-heading .heading h2 {
+            font-size: 30px;
+            border: 2px solid red;
+        }
+        .inquirie .inquirie-list .accordion-button::after {
+            right: 5px;
+        }
+        .inquirie .inquirie-list .accordion-item .accordion-button {
+            font-size: 16px;
+            padding: 20px 30px 20px 0px;
+        }
+        .inquirie .inquirie-list .accordion-body {
+            text-align: left;
+            padding-left: 0;
+        }
+    
+        .faq-button{
+            margin-left: 100px;
+            margin-bottom: 15px;
+        }
+    }
+
+    

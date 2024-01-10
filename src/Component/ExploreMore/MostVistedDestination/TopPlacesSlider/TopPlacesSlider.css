@@ -1,0 +1,93 @@
+.place_item_parent img{
+    /* border: 2px solid red; */
+    width:100%;
+    
+}
+
+.custom-slider-container {
+    box-sizing: border-box;
+  }
+  
+
+  
+/* Hide the numbers in dots */
+.slick-dots li button::before {
+    content: none !important;
+  }
+  
+  /* Style the dots */
+  .slick-dots li {
+    margin: 0 5px; /* Adjust the margin as needed */
+  }
+  
+  .slick-dots li button {
+    width: 10px; /* Adjust the width of the dots */
+    height: 10px; /* Adjust the height of the dots */
+    border-radius: 50%; /* Make them circular */
+    background-color: #0857eb; /* Set the background color */
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: #0fd329; /* Set the background color for active dot */
+  }
+  
+
+  .places_head {
+    margin-right: 5px;
+  }
+  
+
+
+/* TopPlacesSlider.css */
+.custom-slider .slick-slide {
+  transition: .5s;
+  position: relative;
+
+  }
+ 
+  .custom-slider .slick-slide:hover{
+    transform: translate(0px, -10px);
+  }
+
+  .custom-slider{
+    padding: 30px;
+    max-height: 100%;
+  }
+  
+  .place_item_parent{
+    /* border: 2px solid red; */
+    margin-left: 12px;
+  }
+ 
+  
+  .places_child{
+    position: relative;
+}
+
+.place_bottom_text p {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #000000c0;
+}
+
+.bottom_head h6 {
+    font-family: 'SpaceGrotesk';
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.bottom_head {
+    position: absolute;
+    bottom: 1px;
+    background: linear-gradient(#61606000, #000000);
+    width: 100%;
+}
+
+.read_more_btn a {
+    border-bottom: 1px solid #000;
+    color: #000000;
+}
+  

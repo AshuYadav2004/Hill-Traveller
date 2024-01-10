@@ -1,0 +1,87 @@
+section.day_itinearies {
+    margin-top: 60px;
+}
+
+section.day_itinearies .heading h2 {
+    margin-bottom: 50px;
+}
+
+section.day_itinearies .align-items-end:nth-child(3) {
+    margin-top: 45px;
+}
+
+section.day_itinearies .align-items-end:nth-child(4) {
+    margin-top: 45px;
+}
+
+section.day_itinearies p {
+    opacity: 0.8;
+}
+
+section.day_itinearies .day_itineary_img {
+    overflow: hidden;
+}
+
+section.day_itinearies .day_itineary_img:hover img {
+    transform: scale(1.06);
+}
+
+section.day_itinearies .day_itineary_img img {
+    width: 100%;
+    transition: .5s;
+}
+
+section.day_itinearies .day_itineary_parent {
+    margin-left: 25px;
+}
+
+section.day_itinearies .day_itineary_parent .heading h3 {
+    font-size: 40px;
+    color: #FF525D;
+    margin-bottom: 15px;
+}
+
+section.day_itinearies .sub_heading {
+    margin-top: 25px;
+}
+
+section.day_itinearies .sub_heading h6 {
+    font-family: SpaceGrotesk;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+section.day_itinearies .sub_heading p {
+    font-size: 14px;
+}
+
+section.day_itinearies .new_parent {
+    margin-left: 0;
+    margin-right: 25px;
+}
+
+
+@media screen and (max-width:480px) {
+    section.day_itinearies {
+        margin-top: 35px;
+    }
+    section.day_itinearies .heading h2 {
+        margin-bottom: 10px;
+    }
+    section.day_itinearies .day_itineary_parent {
+        margin-left: 0;
+        text-align: center;
+    }
+    section.day_itinearies .new_parent {
+        margin-right: 0px;
+    }
+    section.day_itinearies .align-items-end:nth-child(3) {
+        margin-top: 30px;
+    }
+    section.day_itinearies .align-items-end:nth-child(4) {
+        margin-top: 30px;
+    }
+    section.day_itinearies .day_itineary_parent .heading h3 {
+        font-size: 35px;
+    }
+}

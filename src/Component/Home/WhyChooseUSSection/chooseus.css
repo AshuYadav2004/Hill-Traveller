@@ -1,0 +1,113 @@
+.choose-Us-wrp {
+    background-image: url('../../../../public/Banner-imgs/kedarnath-banner.jpg');
+    height: 535px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 60px;
+    background-attachment: fixed;
+    /* border: 2px solid red; */
+    background-color: rgb(114, 121, 114);
+    width: 100%;
+}
+
+.choose-Us-wrp .heading h2 {
+    padding-top: 60px;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
+
+@media screen and (max-width:480px) {
+    .choose-Us-wrp .heading h2{
+        font-size: 19px;
+        left: 35%;
+    }
+}
+
+.choose-us-card {
+    width: 300px;
+    height: 350px;
+    perspective: 1000px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+    /* border: 2px solid green; */
+  }
+  
+  .choose-us-card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    /* background-color: #6A2C70; */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    /* border: 10px solid #6A2C70; */
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    background-color: #f5f2f1;
+    color: #303030;
+    display: flex;
+    align-items: center;
+    /* border: 10px solid #ffffff; */
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+  
+  .back-content p{
+    font-size: 60%;
+
+  }
+  .back-content h3{
+    font-size: 80%;
+
+  }
+  .card-front-content h3{
+     font-size: 60%;
+  }
+
+  .back-content img{
+    height: 50px;
+  }
+  
+
+  .front-card-img{
+    max-width: 100%;
+    height: 70px;
+  }
+  
+  .carousel{
+    /* border: 2px solid red; */
+    
+  }
+
+
+ 

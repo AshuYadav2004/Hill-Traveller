@@ -1,0 +1,18 @@
+.fix-footer-risponsive {
+    display: block;
+    position: fixed;
+    bottom: 28px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+ 
+
+
+  .icon-wrp-risponsive {
+    padding: 10px;
+    background: crimson;
+    margin: 4px;
+    border-radius: 10px;
+    color: white;
+  }

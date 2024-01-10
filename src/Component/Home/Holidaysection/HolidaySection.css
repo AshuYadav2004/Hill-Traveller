@@ -1,0 +1,88 @@
+section.holidays-sec {
+    margin-top: 60px;
+}
+
+.holidays-sec .holi-heading {
+    padding: 20px;
+}
+
+.holidays-sec .holi-heading span {
+    padding-left: 20px;
+    position: relative;
+}
+
+.holidays-sec .holi-heading h2 {
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.holidays-sec .holi-heading p {
+    margin-right: 13px;
+}
+
+.holidays-sec .holidays-sec-img {
+    text-align: end;
+    overflow: hidden;
+}
+
+.holidays-sec .holidays-sec-img:hover img {
+    transform: scale(1.05);
+}
+
+.holidays-sec .holidays-sec-img img {
+    width: 100%;
+    transition: .5s;
+}
+
+.holidays-sec .holi-heading .learn-more-btn {
+    margin-top: 30px;
+}
+
+.holidays-sec .holi-heading .learn-more-btn a {
+    text-decoration: none;
+    color: #ffffff;
+    background: black;
+    font-family: SpaceGrotesk-Regular;
+    padding: 7px 22px;
+    margin-top: 10px;
+    transition: .5s;
+    border: 1px solid #000000;
+}
+
+.holidays-sec .holi-heading .learn-more-btn a:hover {
+    background: none;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+
+
+
+@media screen and (max-width:480px) {
+    section.holidays-sec {
+        margin-top: 35px;
+    }
+    .holidays-sec .holidays-sec-img img {
+        width: 100%;
+    }
+    .holidays-sec .holi-heading h2 {
+        padding-top: 0px;
+        padding-bottom: 15px;
+        font-size: 35px;
+    }
+    .holidays-sec .holi-heading {
+        text-align: center;
+        padding: 10px;
+    }
+    .holidays-sec .holi-heading span {
+        padding-left: 0px;
+    }
+    .holidays-sec .holi-heading p {
+        margin-right: 0px;
+        text-align: center;
+        line-height: inherit;
+    }
+    .holidays-sec .holi-heading .learn-more-btn {
+        margin: 20px 0px;
+    }
+}

@@ -1,0 +1,36 @@
+
+.uttrakhand-destination .uttrakhand-destination-heading .heading {
+    padding: 20px 35px;
+}
+
+.uttrakhand-destination .uttrakhand-destination-heading .heading h2 {
+    padding-bottom: 10px;
+    margin: 0px;
+    position: relative;
+}
+
+.uttrakhand-destination .uttrakhand-destination-heading .heading p {
+    padding-top: 10px;
+    padding-right: 35px;
+}
+
+.uttrakhand-destination .inspired-btns {
+    margin-left: 25px;
+}
+
+.uttrakhand-destination .inspired-btns a {
+    color: #000000;
+    border: 2px solid;
+    padding: 7px 22px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: SpaceGrotesk;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.uttrakhand-destination .inspired-btns a:hover {
+    background-color: #E1222E;
+    color: #ffffff;
+    border: 2px solid #E1222E;
+}

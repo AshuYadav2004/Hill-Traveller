@@ -1,0 +1,81 @@
+.luxry-button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #ffffff;
+    background: none;
+  }
+  
+  .luxry-button:hover {
+    color: #050505;
+    transform: scale(1.1);
+    outline: 2px solid #f9fafa;
+    box-shadow: 4px 5px 17px -4px #cacfcf;
+  }
+  
+  .luxry-button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #cacfcf;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  .luxry-button:hover::before {
+    width: 250%;
+  }
+  
+  section.luxury-escape {
+    background-image: url(/Banner-imgs/Rafting-banner.jpg);
+    height: 478px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    background-attachment: fixed;
+}
+
+.luxury-escape .luxury-escape-heading .heading p {
+    width: 63%;
+    margin: 0px auto;
+    padding-bottom: 20px;
+}
+
+
+
+
+/*  */
+
+@media screen and (max-width:480px) {
+    section.luxury-escape {
+        margin-top: 40px;
+    }
+    .luxury-escape .luxury-escape-heading .heading h2 {
+        margin-bottom: 0px;
+    }
+    .luxury-escape .luxury-escape-heading .heading p {
+        width: 100%;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+    .luxury-escape .luxury-escape-heading .heading .luxry-button {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,266 @@
+.best-for-you .let-us-find-form .form-control::placeholder {
+    color: rgb(234, 234, 234);
+    opacity: .5;
+    /* Firefox */
+}
+
+section.best-for-you {
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    margin-top: 45px;
+    background-image: url(./img/Home-banner1.jpg);
+    background: rgb(8 131 189 / 7%);
+}
+
+.best-for-you .best-for-you-heading {
+    padding-top: 125px;
+    width: 90%;
+}
+
+.best-for-you .best-for-you-heading .heading h2 {
+    position: relative;
+}
+
+.best-for-you .best-for-you-heading .heading p {
+    padding-top: 10px;
+}
+
+.best-for-you .let-us-find-form {
+    background: #0883bd;
+    padding: 45px 50px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.number:nth-child(1) {
+    margin-right: 25px;
+}
+
+.number:nth-child(2) {
+    margin-right: 25px;
+}
+
+.best-for-you .let-us-find-form .form-control {
+    border-bottom: 2px solid #ffffff !important;
+    background-color: #fff0;
+    border-radius: 0px;
+    border: none;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.select2-container {
+    margin-top: 10px;
+}
+
+.select2-container--open .select2-dropdown--below,
+.select2-container--open .select2-dropdown--above {
+    border-top: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    font-family: Poppins-Regular;
+    background: rgb(0, 0, 0);
+    color: white;
+    top: -11px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-radius: 0px;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #000;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+    padding-bottom: 10px;
+    /* border-radius: 4px; */
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #000;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+    padding-bottom: 34px;
+    /* border-radius: 4px; */
+    font-family: 'Poppins-Regular';
+    color: #575757;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #7a7878;
+    line-height: 28px;
+}
+
+.select2-results__option {
+    color: #7a7878;
+    cursor: pointer;
+}
+
+.select2-container--open .select2-dropdown--below {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    font-family: 'Poppins-Regular';
+    background: #000;
+    color: white;
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+    max-height: 165px;
+    overflow-y: auto;
+}
+
+.best-for-you .let-us-find-form .form-control:focus {
+    background-color: #0000;
+    box-shadow: none;
+    color: #9b9b9b;
+}
+
+.best-for-you .let-us-find-form .form-heading h5 {
+    text-align: center;
+    font-family: 'SpaceGrotesk';
+    font-size: 27px;
+    width: 70%;
+    line-height: 40px;
+    margin: 0px auto;
+    margin-bottom: 15px;
+}
+
+.best-for-you .let-us-find-form .form-select {
+    border-bottom: 2px solid #ffffff !important;
+    background-color: #000;
+    background-image: url(../img/Arrow\ 4.png);
+    border-radius: 0px;
+    border: none;
+    background-size: 12px;
+}
+
+.best-for-you .let-us-find-form .form-control .form-select:focus {
+    color: #ffffff;
+    background: black;
+}
+
+.best-for-you .let-us-find-form .form-btn {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.best-for-you .let-us-find-form .form-submit {
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'SpaceGrotesk';
+    background: #FF525D;
+    padding: 10px 30px;
+    border-radius: 4px;
+    border: none;
+}
+
+@media screen and (max-width:480px) {
+    section.best-for-you {
+        margin-top: 35px;
+    }
+    .best-for-you .best-for-you-heading {
+        padding: 0px;
+        width: 100%;
+    }
+    .best-for-you .best-for-you-heading .heading h2 {
+        text-align: center;
+    }
+    .heading span {
+        margin-left: 150px;
+       
+    };
+    .best-for-you .best-for-you-heading .heading p {
+        width: 100%;
+        padding-top: 10px;
+        text-align: center;
+        margin: 0px auto;
+    }
+    .best-for-you .let-us-find-form .form-heading {
+        width: 100%;
+    }
+    .best-for-you .let-us-find-form {
+        background: black;
+        padding: 26px 25px;
+        border-radius: 10px;
+        color: white;
+        margin-top: 15px;
+    }
+    .best-for-you .let-us-find-form .form-select {
+        border-bottom: 2px solid white !important;
+        border-radius: 0px;
+        border: none;
+        padding: 7px 3px;
+        margin-bottom: 13px;
+        color: white;
+    }
+    .best-for-you .let-us-find-form .form-heading h5 {
+        width: 100%;
+    }
+    .best-for-you .let-us-find-form .form-control {
+        border-bottom: 2px solid white !important;
+        border-radius: 0px;
+        border: none;
+        padding: 7px 3px;
+        outline: none !important;
+        vertical-align: inherit;
+        font-size: 12px;
+    }
+    .enquire_popup .field i {
+        font-size: 17px;
+    }
+    .best-for-you .let-us-find-form .form-submit {
+        font-size: 14px;
+    }
+    /* select search dropdown css start  */
+    .choices[data-type*=select-one] .choices__inner {
+        padding: 7px 3px;
+        outline: none !important;
+        font-size: 12px;
+        min-height: auto;
+        vertical-align: inherit;
+        border-bottom: 2px solid #ffffff;
+    }
+    .choices__list--single {
+        font-size: 12px;
+        padding: 0;
+    }
+    .choices__list--dropdown .choices__item {
+        font-size: 12px;
+    }
+    /* select search dropdown css end  */
+    .enquire_popup form .page .field .form-control {
+        padding: 10px 0px;
+        font-size: 12px;
+    }
+    .enquire_popup form .page .btns button.prev {
+        font-size: 13px;
+    }
+    .enquire_popup .my_container {
+        padding: 0px 15px 20px;
+    }
+    .enquire_popup .modal-title {
+        font-size: 16px;
+    }
+    .enquire_popup .btn-close {
+        background-size: 35%;
+    }
+    .enquire_popup .field.btns {
+        width: 80%;
+        margin: 0px auto;
+        margin-top: 20px;
+    }
+    .enquire_popup form .page .btns button.prev {
+        font-size: 13px;
+    }
+    .enquire_popup form .page .field button {
+        font-size: 13px;
+        padding: 8px 20px;
+    }
+    .enquire_popup .field {
+        margin-top: 15px;
+    }
+}

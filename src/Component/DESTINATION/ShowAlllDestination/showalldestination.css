@@ -1,0 +1,11 @@
+.Page-navigation{
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+.pagination{
+    /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center
+}

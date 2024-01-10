@@ -1,0 +1,59 @@
+section.uttrakhand-destination {
+    margin-top: 60px;
+}
+
+@media screen and (max-width:480px) {
+    section.uttrakhand-destination {
+        margin-top: 35px;
+    }
+    .uttrakhand-destination .uttrakhand-destination-heading .heading h2::after {
+        top: 20px;
+        left: 277px;
+    }
+    .uttrakhand-destination .inspired-btns {
+        margin: 0px auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .uttrakhand-destination.heading h2 {
+        font-family: PlayfairDisplay;
+        font-size: 40px;
+        text-align: center;
+    }
+    .uttrakhand-destination .uttrakhand-destination-heading .heading p {
+        padding: 0px;
+    }
+    .uttrakhand-destination .inspired-img-wrp .inspired-text {
+        padding: 0px 15px;
+    }
+    .uttrakhand-destination .inspired-img-wrp .inspired-text h5 {
+        font-size: 50px;
+    }
+    .uttrakhand-destination .uttrakhand-destination-heading .heading {
+        padding: 0px;
+        text-align: center;
+    }
+    .uttrakhand-destination .inspired-img-wrp .inspired-text p {
+        font-size: 14px;
+    }
+    section.uttrakhand-destination .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .uttrakhand-destination-heading .heading p {
+        padding-top: 10px;
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .img-conatainer h3{
+        position: absolute;
+        bottom: 2%;
+        color: white;
+        left: 5%;
+        font-weight: 900;
+        font-size: 1.2rem;
+      }
+      
+}

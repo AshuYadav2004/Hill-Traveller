@@ -1,0 +1,124 @@
+.make_itineraries{
+    background-image: url('/public/utlity-imgs/itineraries-details/make_itineary_munnar_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 70px 0px;
+    margin-top: 65px;
+}
+
+.make_itineraries .make_heading h4 {
+    font-family: SpaceGrotesk;
+}
+.make
+
+.make_itineraries .make_heading h4 {
+    font-size: 30px;
+}
+
+.make_itineraries .make_pera p {
+    margin-bottom: 0;
+}
+
+.make_itineraries .call_us_btn a i {
+    padding-right: 10px;
+    font-size: 17px;
+}
+
+.make_itineraries .call_us_btn {
+    text-align: center;
+}
+
+.make_itineraries .call_us_btn a {
+    background-color: #E1222E;
+    border: 1px solid #E1222E;
+    padding: 12px 20px;
+    font-size: 20px;
+    color: #ffffff;
+    transition: .5s;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.make_itineraries .call_us_btn a:hover {
+    background: none;
+    border: 1px solid #ffffff;
+}
+
+.make_itineraries .call_us_btn a:nth-child(2) {
+    background: none;
+    border: 1px solid #ffffff;
+    font-size: 20px;
+    padding: 12px 40px;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+.make_itineraries .call_us_btn a:nth-child(2):hover {
+    background-color: #E1222E;
+    color: #ffffff;
+    border: 1px solid #E1222E;
+}
+
+@media screen and (max-width:480px) {
+    .make_itineraries {
+        padding: 40px 0px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .make_itineraries .make_heading h4 {
+        font-size: 25px;
+    }
+    .make_itineraries .call_us_btn {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .make_itineraries .call_us_btn a {
+        font-size: 16px;
+    }
+    .make_itineraries .call_us_btn a:nth-child(2) {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width:481px) and (max-width:640px) {
+    .make_itineraries {
+        padding: 40px 0px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .make_itineraries .make_heading h4 {
+        font-size: 25px;
+    }
+    .make_itineraries .call_us_btn {
+        margin-top: 30px;
+    }
+    .make_itineraries .call_us_btn a {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width:640px) and (max-width:1040px) {
+    .make_itineraries {
+      /* border: 2px solid red; */
+    }
+    .make_itineraries .make_heading h4 {
+        font-size: 25px;
+    }
+    .make_itineraries .call_us_btn a i {
+        padding-right: 10px;
+        font-size: 17px;
+    }
+    .make_itineraries .call_us_btn a {
+        font-size: 16px;
+        text-align: center;
+        
+    }
+
+    .make_itineraries .call_us_btn a:nth-child(2) {
+        background: none;
+       font-size: 16px;
+       padding: 10px 16px;
+    }
+}
