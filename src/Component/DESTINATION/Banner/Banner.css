@@ -15,7 +15,16 @@
     position: absolute;
     left: 0;
     right: 0;
-    /* top: 40%; */
+    background-color: rgb(0, 0, 0.3,0.3);
+    top: 40%;
+    
+}
+
+.itineraries_banner .experience-banner-heading h1{
+    font-size:71px;
+    
+    /* max-width: 200px; */
+    margin-bottom: 0px !important;
 }
 
 .itineraries_banner .itineraries_parent .experience-banner-heading h1 {

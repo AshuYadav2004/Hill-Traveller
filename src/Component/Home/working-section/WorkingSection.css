@@ -8,6 +8,7 @@ section.working-we-are {
     text-align: center;
     padding-top: 20px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .working-we-are .works-icon-wrp .works-icon-pera {
