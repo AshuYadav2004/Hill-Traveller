@@ -6,6 +6,10 @@ header .container,
     max-width: 1408px;
 }
 
+header .container{
+    margin-top: 0px;
+}
+
 header .navbar-brand img {
     width: 80px;
 }
