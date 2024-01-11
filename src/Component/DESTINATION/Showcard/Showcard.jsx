@@ -12,7 +12,7 @@ function Showcard({cardData}) {
         cusin
     } = cardData
   return (
-    <div className="col-lg-4 col-xs-6 col-sm-4" data-aos="fade-down">
+    <div id='Two-row' className="col-lg-4 col-xs-6 col-sm-4" data-aos="fade-down">
     <div className="place-main">
       <div className="place-img">
         <img src={img} alt="" />

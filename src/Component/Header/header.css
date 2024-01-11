@@ -11,7 +11,7 @@ header .container{
 }
 
 header .navbar-brand img {
-    width: 80px;
+    width: 140px;
 }
 
 header .search_toggle_head {
@@ -40,7 +40,7 @@ header .navbar .navbar-nav .nav-link:hover {
         padding: 10px 10px !important;
     }
     header .navbar-brand img {
-        width: 62px;
+        width: 100px;
     }
     header .navbar .navbar-nav .nav-link {
         font-size: 11px;
@@ -156,7 +156,7 @@ header .navbar .navbar-nav .nav-link.contact_no {
     background-color: #15678c;
     color: #ffffff;
     padding: 0.8em 1.5em;
-    font-size: 15px;
+    font-size: 13px !important;
     border-radius: 50px;
 }
 
@@ -164,7 +164,7 @@ header .navbar .navbar-nav .nav-link.enquire {
     background-color: #000000;
     color: #ffffff;
     padding: 0.8em 0.8em;
-    font-size: 10px;
+    font-size: 13px;
     border-radius: 50px;
     margin-left: 0px;
     /* margin-top: 10px; */

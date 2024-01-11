@@ -9,3 +9,13 @@
   justify-content: center;
   align-items: center
 }
+
+.cover-of-cards{
+  margin-top: 0px !important;
+}
+
+
+
+@media only screen and (min-width:481px) and (max-width:640px) {
+  
+}

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Header, Footer } from './Component/export';
 import { Home, Destination, CharDham, ExploreMore, AdminLogin,Adminlayout,AddDestination } from './Pages/export';
 import { Route, Routes } from 'react-router-dom';
@@ -9,6 +9,8 @@ import PopupForm from './Component/PopupForm/PopupForm';
 import FixBottomNav from './Component/FixBottomNav/FixBottomNav';
 
 // Create a Layout component that includes the header and footer
+
+
 const Layout = ({ children }) => (
   <>
   <PopupForm/>
