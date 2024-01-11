@@ -17,16 +17,19 @@ function AdminLogin() {
     onSubmit: async values => {
       Setloader(true)
       const result = await auth.login(values)
+      console.log("this is the result",result)
+       
+      if(result === null){
+        Setloader(false)
+        toast.warn("something went wrong please try again")
+      }
 
       if(result.status === 200){
         Setloader(false);
         navigate('/')
         toast.success(result.data.message)
       }
-      else if(result === null){
-        Setloader(false)
-        toast.warn("something went wrong please try again")
-      }
+       
       else{
         Setloader(false);
                 toast.error(result.data.message)
