@@ -36,7 +36,6 @@ section.holidays-sec {
 
 .holidays-sec .holi-heading .learn-more-btn {
     margin-top: 30px;
-    font-family: 'Poppins', sans-serif;
 }
 
 .holidays-sec .holi-heading .learn-more-btn a {
@@ -88,9 +87,40 @@ section.holidays-sec {
     }
 }
 
-@media screen and (min-width:500px) and (max-width:750px)  {
-    #ram{
-    width: 100%;
+
+@media only screen and (max-width:875px){
+    #ram .col-sm-6{
+        width: 100% !important;
+    }
 }
+
+
+@media only screen and (max-width:768px){
+    section.holidays-sec {
+        margin-top: 26px;
+    }
+    section.holidays-sec .row {
+        align-items: center;
+    }
+
+
+    #ram .col-sm-6{
+        width: 100%;
+    }
+
+
+    .holidays-sec .holidays-sec-img {
+        text-align: center;
+    }
+    .holidays-sec .holidays-sec-img img {
+        width: 100%;
+    }
+    .holidays-sec .heading h2 {
+        padding-bottom: 10px;
+    }
+    .holidays-sec .heading span::after {
+        top: 3px;
+        left: 75px;
+    }
 }
 

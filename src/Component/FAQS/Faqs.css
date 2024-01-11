@@ -20,7 +20,7 @@ section.inquirie {
 
 .inquirie .inquirie-list .accordion-button::after {
     position: absolute;
-    right: -40px;
+    right: 0px;
 }
 
 .inquirie .inquirie-list button.accordion-button:focus {
@@ -128,19 +128,16 @@ section.inquirie {
         padding-top: 0px;
         margin-bottom: 30px;
         /* border: 2px solid red; */
-        .inquirie .inquirie-heading span{
-            border: 2px solid green;
-            margin-right: 150px;;
-        } */
+        
         .inquirie .inquirie-heading .heading h2 {
             font-size: 30px;
-            border: 2px solid red;
+            /* border: 2px solid red; */
         }
         .inquirie .inquirie-list .accordion-button::after {
             right: 5px;
         }
         .inquirie .inquirie-list .accordion-item .accordion-button {
-            font-size: 16px;
+            font-size: 14px;
             padding: 20px 30px 20px 0px;
         }
         .inquirie .inquirie-list .accordion-body {
@@ -149,9 +146,30 @@ section.inquirie {
         }
     
         .faq-button{
-            margin-left: 100px;
+            /* margin-left: 100px; */
             margin-bottom: 15px;
         }
     }
 
     
+    @media screen and (max-width:768px){
+      section.inquirie {
+        margin-top: 26px;
+    }
+    .inquirie .inquirie-heading {
+        padding-top: 10px;
+        text-align: center;
+    }
+    .inquirie .inquirie-heading .heading h2::after {
+        top: 26px;
+        right: 200px;
+    }
+    }
+
+
+
+    @media screen and (max-width:655px) {
+      .subscribe .subscribe-btn{
+        overflow: hidden;
+      }
+    }

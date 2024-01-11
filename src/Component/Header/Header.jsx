@@ -58,11 +58,13 @@ function Header() {
                                )
                             })
                            }
-                    <li className="nav-item">
+                    <li className="nav-item nav-item-btn">
                       <a href="tel:+919579161741" className="nav-link contact_no">+91- 9579161741 </a>
                     </li>
-                    <li className="nav-item">
-                      <a href="#" className="nav-link enquire" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Enquiry Now</a>
+                    <li className="nav-item  nav-item-btn">
+                      <a href="#" 
+                      id='enquiry-btn'
+                      className="nav-link enquire" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Enquiry Now</a>
                     </li>
                   </ul>
                 </div>
