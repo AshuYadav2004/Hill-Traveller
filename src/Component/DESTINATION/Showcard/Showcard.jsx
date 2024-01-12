@@ -5,7 +5,7 @@ import { FaArrowRight } from 'react-icons/fa';
 function Showcard({coverimg,besthingArr,name,link,cardData}) {
    console.log("showcard",cardData,"besthingsarrr",besthingArr)
   return (
-    <div className="col-lg-4 col-xs-6 col-sm-4" data-aos="fade-down">
+    <div id='Two-row' className="col-lg-4 col-xs-6 col-sm-4" data-aos="fade-down">
     <div className="place-main">
       <div className="place-img">
         <img src={coverimg} alt="" />

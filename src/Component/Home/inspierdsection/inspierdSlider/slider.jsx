@@ -1,4 +1,4 @@
-import React from "react";
+import {React , useEffect} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -19,15 +19,42 @@ const InspiredSection = () => {
           <FaChevronLeft size={30} color="white" />
         </div>
       );
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-  };
+      const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,   // Default value for screens larger than 450px
+        slidesToScroll: 3, // Default value for screens larger than 450px
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+      };
+      
+      // Adjust settings for screens less than or equal to 450px
+      if (window.innerWidth <= 450) {
+        settings.slidesToShow = 2;
+        settings.slidesToScroll = 2;
+      }
+
+      useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth <= 450) {
+            settings.slidesToShow = 2;
+            settings.slidesToScroll = 2;
+          } else {
+            settings.slidesToShow = 3;
+            settings.slidesToScroll = 3;
+          }
+        };
+      
+        // Attach the event listener
+        window.addEventListener('resize', handleResize);
+      
+        // Cleanup the event listener on component unmount
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
+            
 
   const slideItems = [
     { id: 1, imageSrc: "/utlity-imgs/Chopta.jpg", text: "Chopta" },

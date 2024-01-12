@@ -7,7 +7,7 @@ function HolidaySection() {
     <section className="holidays-sec" data-aos="fade-up">
     <div id='ram' className="container">
       <div className="row">
-        <div className="col-lg-6 col-sm-6">
+        <div className="col-lg-6 col-sm-6 video-cover">
           <div className="holi-heading">
             <span className="left-align">ABOUT <img className="red_circle" src="../../../../public/utlity-imgs/circle_red.png" alt="" style={{height:"10px"}}/></span>
             <h2>Hilltraveller Holidays</h2>
@@ -20,7 +20,7 @@ function HolidaySection() {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 col-sm-6">
+        <div  className="col-lg-6 col-sm-6 video-cover">
           <video className="w-100" autoPlay loop muted>
             <source src="/utlity-imgs/kedarnath.mp4" type="video/mp4" />
           </video>

@@ -21,7 +21,7 @@
 }
 
 .itineraries_banner .experience-banner-heading h1{
-    font-size:71px;
+    font-size:30px;
     
     /* max-width: 200px; */
     margin-bottom: 0px !important;
@@ -39,4 +39,10 @@
 
         }
         
+        .itineraries_banner .experience-banner-heading h1{
+            font-size:23px;
+            
+            /* max-width: 200px; */
+            margin-bottom: 0px !important;
+        }
     }

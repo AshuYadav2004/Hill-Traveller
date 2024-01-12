@@ -40,7 +40,7 @@ function ShowAllDestination({ cardData}) {
       
   return (
    <section className='Destination-wrp place'>
-     <div className="container">
+     <div className="container cover-of-cards">
         <div className="row">
             <div className="col-lg-12">
             <div className="places-main-wrp">
