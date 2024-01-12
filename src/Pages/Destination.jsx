@@ -1,122 +1,40 @@
-import React from 'react'
-import { Banner,Showcard,ShowAllDestination,BestForYouSection,NewsLetter } from '../Component/export'
-
+import React, { useEffect, useState } from 'react'
+import { Banner,Showcard,ShowAllDestination,BestForYouSection,NewsLetter,Loader } from '../Component/export'
+import { destination } from '../api/Destination';
+import { toast } from 'react-toastify';
 function Destination() {
-  const cardData = [
-    {
-        name :"kedarnath",
-        img : "/utlity-imgs/Kedarnath.jpg",
-        bestTime:"October-December",
-        climate :"Tropical",
-        language:"Hindi, English, Garhwali",
-        cusin :"Spice and Flavorful"
-    },
-    {
-        name :"kedarnath",
-        img : "/utlity-imgs/Kedarnath.jpg",
-        bestTime:"October-December",
-        climate :"Tropical",
-        language:"Hindi, English, Garhwali",
-        cusin :"Spice and Flavorful"
-    },
-    {
-        name :"kedarnath",
-        img : "/utlity-imgs/Kedarnath.jpg",
-        bestTime:"October-December",
-        climate :"Tropical",
-        language:"Hindi, English, Garhwali",
-        cusin :"Spice and Flavorful"
-    },
-    {
-        name :"kedarnath",
-        img : "/utlity-imgs/Kedarnath.jpg",
-        bestTime:"October-December",
-        climate :"Tropical",
-        language:"Hindi, English, Garhwali",
-        cusin :"Spice and Flavorful"
-    },
-    {
-        name :"kedarnath",
-        img : "/utlity-imgs/Kedarnath.jpg",
-        bestTime:"October-December",
-        climate :"Tropical",
-        language:"Hindi, English, Garhwali",
-        cusin :"Spice and Flavorful"
-    },
-
-    {
-        name :"kedarnath",
-        img : "/utlity-imgs/Kedarnath.jpg",
-        bestTime:"October-December",
-        climate :"Tropical",
-        language:"Hindi, English, Garhwali",
-        cusin :"Spice and Flavorful"
-    },
-
-    {
-        name :"kedarnath",
-        img : "/utlity-imgs/Kedarnath.jpg",
-        bestTime:"October-December",
-        climate :"Tropical",
-        language:"Hindi, English, Garhwali",
-        cusin :"Spice and Flavorful"
-    },
-
-    {
-        name :"kedarnath",
-        img : "/utlity-imgs/Kedarnath.jpg",
-        bestTime:"October-December",
-        climate :"Tropical",
-        language:"Hindi, English, Garhwali",
-        cusin :"Spice and Flavorful"
-    },
-
-    {
-        name :"kedarnath",
-        img : "/utlity-imgs/Kedarnath.jpg",
-        bestTime:"October-December",
-        climate :"Tropical",
-        language:"Hindi, English, Garhwali",
-        cusin :"Spice and Flavorful"
-    },
-
-    {
-        name :"kedarnath",
-        img : "/utlity-imgs/Kedarnath.jpg",
-        bestTime:"October-December",
-        climate :"Tropical",
-        language:"Hindi, English, Garhwali",
-        cusin :"Spice and Flavorful"
-    },
-    {
-        name :"kedarnath",
-        img : "/utlity-imgs/Kedarnath.jpg",
-        bestTime:"October-December",
-        climate :"Tropical",
-        language:"Hindi, English, Garhwali",
-        cusin :"Spice and Flavorful"
-    },
-      {
-        name :"kedarnath",
-        img : "/utlity-imgs/Kedarnath.jpg",
-        bestTime:"October-December",
-        climate :"Tropical",
-        language:"Hindi, English, Garhwali",
-        cusin :"Spice and Flavorful"
-    },
-
-]
+    const [loader,setloader] = useState(false)
+      
+    const [cardData,setCarddata] = useState([])
+    useEffect(()=>{
+        ( async ()=>{
+            const result = await destination.getAllDestination()
+            if(result.status === 200){
+              setCarddata(result.data.data)
+            }
+           else{
+             toast.error("erro fetching data")
+           }
+        })()
+    },[])
+console.log(cardData)
 const Bannerdata = {
-  BannerImg:"/Banner-imgs/destination-banner.jpg",
+  image:"/Banner-imgs/destination-banner.jpg",
   heading:"Making Memories",
-  para:"Discovering Places"
+  description:"Discovering Places"
 
+}
+
+if(loader){
+    return(
+        <Loader/>
+    )
 }
 
   return (
    <>
    <Banner BannerData={Bannerdata}/>
-  <ShowAllDestination cardData={cardData}/>
+   <ShowAllDestination cardData={cardData}/>
   <BestForYouSection/>
   <NewsLetter/>
    </>

@@ -19,6 +19,7 @@ import DayItinearies from "./ExploreMore/Day-itinearies/DayItinearies";
 import MakeItinerariesSections from "./DESTINATION/makeItinerariesSection/makeItinerariesSection";
 import TopPlacesSection from "./ExploreMore/MostVistedDestination/TopPlacesSection/TopPlacesSection";
 import AdminNavbar from "./Admin/AdminNavbar/AdminNavbar";
+import Loader from "./Loader/Loader";
 
 
-export{Header,Slider,HolidaySection,WhychooseUsSection,InspiredSection,WorkingSection,LuxuryEscapeSection,HappyCustomerSection,BestForYouSection,FaqSection,NewsLetter,Footer,Banner,Showcard,ShowAllDestination,MunnarWithUsSection,ItineraryTab,DayItinearies,MakeItinerariesSections,TopPlacesSection,AdminNavbar}
+export{Header,Slider,HolidaySection,WhychooseUsSection,InspiredSection,WorkingSection,LuxuryEscapeSection,HappyCustomerSection,BestForYouSection,FaqSection,NewsLetter,Footer,Banner,Showcard,ShowAllDestination,MunnarWithUsSection,ItineraryTab,DayItinearies,MakeItinerariesSections,TopPlacesSection,AdminNavbar,Loader}

@@ -4,6 +4,7 @@ import { Slider,HolidaySection,WhychooseUsSection,InspiredSection,WorkingSection
 function Home() {
   return (
    <>
+   
    <Slider/>
    <HolidaySection/>
    <WhychooseUsSection/>

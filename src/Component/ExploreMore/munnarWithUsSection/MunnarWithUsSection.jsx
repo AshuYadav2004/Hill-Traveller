@@ -2,8 +2,10 @@ import React from 'react';
 import './MunnarWithUsSection.css';
 import { useState } from 'react';
 
-const MunnarWithUsSection = () => {
-    let content =" Auli, a haven for biking aficionados, unveils spellbinding mountain biking trails, ideal for a summer dirt-off escapade. Take your adventure to new heights with the exhilarating 4 km Gondola or cable car journey, providing a panoramic spectacle of Auli's enchanting resort landscape. Beyond the thrill of biking and scenic rides, Auli entices visitors with must-see attractions, including the captivating Artificial Lake. Positioned strategically, each spot promises a unique and immersive experience, solidifying Auli as a multifaceted destination where adventure seamlessly intertwines with natural beauty. In 2011, Auli, Uttarakhand, made history as the prestigious host of the inaugural South Asian Winter Games. Elevating the event to international standards, French and Austrian experts spearheaded the organization, bringing their unparalleled expertise to ensure a seamlessly executed and unforgettable sporting spectacle in the heart of the Himalayas.   Auli, a gem among the world's top ski resorts, invites you to elevate your skiing prowess. During your week-long sojourn, seize the opportunity to enroll in the GMVN's meticulously curated 7 or 14-day ski courses, personally guided by seasoned experts. This exclusive experience promises not just adventure but a transformative journey into the art of skiing. Tailored provisions for day tourists ensure that everyone, from novices to enthusiasts, can savor the exhilaration of Auli's world-class skiing adventures. "
+const MunnarWithUsSection = ({data}) => {
+
+  let content = data.description
+    
     const [showFullContent, setShowFullContent] = useState(false);
 
   const toggleContent = () => {
@@ -16,7 +18,7 @@ const MunnarWithUsSection = () => {
           <div className="col-lg-5">
             <div className="munnar_img_wrp">
               <div className="munnar_img">
-                <img src="/utlity-imgs/itineraries-details/way-of-Auli.jpg" alt="" />
+                <img src={data.image} alt="" />
               </div>
             </div>
           </div>
@@ -24,7 +26,7 @@ const MunnarWithUsSection = () => {
             <div className="why_munnar_parent">
               <div className="why_munnar_wrp">
                 <div className="heading">
-                  <h2>Why you should travel Auli with us?</h2>
+                  <h2>{data.heading}</h2>
                 </div>
               </div>
               <div className={`article why_munnar_pera r ${showFullContent ? 'expanded' : ''} `}>

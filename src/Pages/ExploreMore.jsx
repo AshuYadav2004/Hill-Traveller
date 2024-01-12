@@ -1,12 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Banner,MunnarWithUsSection,ItineraryTab,DayItinearies,MakeItinerariesSections,TopPlacesSection,BestForYouSection,HappyCustomerSection,FaqSection,NewsLetter } from '../Component/export'
+import {destination} from '../api/Destination'
+import { ToastContainer, toast } from 'react-toastify';
+import { useParams } from 'react-router';
 
 function ExploreMore() {
+  const [exploreData, setEexploreData] = useState([])
+  const id = useParams()
+  console.log("here is the id",id.id)
+  useEffect(()=>{
+    (async ()=>{
+      const result = await destination.getDestination(id.id)
+      if(result.status === 200){
+        setEexploreData(result.data.data)
+      }
+     else{
+       toast.error("erro fetching data")
+     }
+    })()
+  },[])
+  console.log('destinaion',exploreData)
     // for banner data
     const Bannerdata = {
-        BannerImg:"/Banner-imgs/auli-banner.jpg",
-        heading:"Auli",
-        para:""
+      //  ...exploreData[0]['bannerData']
       
       }
 
@@ -71,7 +87,7 @@ function ExploreMore() {
   return (
    <>
    <Banner BannerData={Bannerdata}/>
-   <MunnarWithUsSection />
+   <MunnarWithUsSection data={{...exploreData[0].otherSectionData}}/>
    <ItineraryTab/>
    <DayItinearies/>
    <MakeItinerariesSections/>

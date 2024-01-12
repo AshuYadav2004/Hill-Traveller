@@ -46,8 +46,15 @@ function ShowAllDestination({ cardData}) {
             <div className="places-main-wrp">
                <div className="row">
                 {currentItem.map((data,index)=>{
+                   const BestThingArr = [];
+                   for (const key in data.bestThings) {
+                     if (data.bestThings[key] !== "") {
+                       
+                       BestThingArr.push(key);
+                     }
+                   }
                 return(
-                    <Showcard cardData={data} key={index}/>
+                    <Showcard coverimg={data.coverImage} besthingArr={BestThingArr} name={data.bannerData.heading} link={data._id} cardData={data} key={index}/>
                 )
                 })}
               

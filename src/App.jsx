@@ -8,6 +8,7 @@ import EnquireFormModal from './Component/EnquireFormModal/EnquireFormModal';
 import PopupForm from './Component/PopupForm/PopupForm';
 import FixBottomNav from './Component/FixBottomNav/FixBottomNav';
 
+
 // Create a Layout component that includes the header and footer
 const Layout = ({ children }) => (
   <>
@@ -37,7 +38,7 @@ function App() {
       />
       <Route path='/destinations' element={<Layout><Destination /></Layout>} />
       <Route path='/charDham' element={<Layout><CharDham /></Layout>} />
-      <Route path='/faqs' element={<Layout><ExploreMore /></Layout>} />
+      <Route path='/exploremore/:id' element={<Layout><ExploreMore /></Layout>} />
       
       {/* For the Admin route, do not include the Layout component */}
       <Route path='/admin' element={<AdminLogin />} />
