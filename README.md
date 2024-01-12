@@ -90,4 +90,4 @@ Start the server
   npm run dev
 ```
 
-The app will run on your hello bhai !!
+The app will run on your localhost !!
