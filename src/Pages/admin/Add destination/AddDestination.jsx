@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState,useRef } from 'react'
 import './AddDestination.css'
 import { Link } from 'react-router-dom'
 import { destination } from '../../../api/Destination';
+import { ToastContainer, toast } from 'react-toastify';
+import { Loader } from '../../../Component/export';
 
 function AddDestination() {
 
@@ -63,7 +65,7 @@ function AddDestination() {
         return newObject;
       };
 
-    ;
+    
       const [updateheading, setUpdateheading] = useState('');
       const [updateDescription, setUpdateDescription] = useState('');
     
@@ -81,7 +83,7 @@ function AddDestination() {
 
    
    const caategory = ["kfdlfjldkf","fjdljfskld","dfjll"];
-    const bestThings = ["Best Time","Climate","Cuisine","Langauge","Geography","Population"]
+    const bestThings = ["BestTime","Climate","Cuisine","Langauge","Geography","Population"]
 
     // for array generate
     const [numarr,setnumarr] = useState([])
@@ -95,7 +97,6 @@ function AddDestination() {
    const newobj = generateObject(InputNum)
    setDayItinearies(newobj)
    }
-
    const data = {
     catagory,
     Bannerdata,
@@ -105,34 +106,40 @@ function AddDestination() {
     ContactSection,
 
    }
+   const formRef = useRef(null);
+   const [loader,SetLoader] = useState(false)
    const SubmitForm = async (e)=>{
     e.preventDefault()
-    console.log(data)
-  
-    // const formData = new FormData();
+    SetLoader(true);
 
-    // Images.forEach((i)=>{
-    //   formData.append(i.name,i.File,i.name)
-    // })
+    const result = await destination.AddDestination(Images,data);
 
-    const result = await destination.AddDestination(Images,data)
-    console.log(result)
-
+    if(!result){
+      SetLoader(false);
+      toast.error("something went wrong")
+    }
+    if(result.status === 200){
+          SetLoader(false);
+          toast.success(result.data.message);
+          if (formRef.current) {
+            formRef.current.reset();
+          }
+    }
+    else{
+      SetLoader(false)
+      toast.error(result.data.message);
+    }
     
 
-
-
-     
     
-      
-   }
+  }
  
 
   return (
     <div className='papa'>
 
     <div className="container">  
-    <form id="contact">
+    <form id="contact" ref={formRef} >
           <h2>Add Destination</h2>
         
      <fieldset>
@@ -226,9 +233,9 @@ function AddDestination() {
       <h3>Best things</h3>
         <div id="bestthings">
             {
-                bestThings.map((i)=>{
+                bestThings.map((i,index)=>{
                   return(
-                    <fieldset>
+                    <fieldset key={index}>
                     <input placeholder={i} type="text" name={i} required autoFocus onChange={GetBestThings} value={BestTings.i} />
                   </fieldset>
                   )
@@ -304,7 +311,7 @@ function AddDestination() {
         }} value={ContactSection.description} required></textarea>
       </fieldset>
       <fieldset>
-        <button name="submit" type="submit" id="contact-submit" onClick={SubmitForm}>Submit</button>
+        <button name="submit" type="submit" id="contact-submit" onClick={SubmitForm}>{loader?(<Loader/>):"Submit"}</button>
       </fieldset>
 
     </form>

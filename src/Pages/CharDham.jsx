@@ -43,9 +43,11 @@ function CharDham() {
 
     // banenr data
     const Bannerdata = {
-      BannerImg:"/Banner-imgs/chardham-banner.jpg",
+      
       heading:"char Dham",
-      para:""
+      image:"/Banner-imgs/chardham-banner.jpg",
+      description:"",
+      
     
     }
     

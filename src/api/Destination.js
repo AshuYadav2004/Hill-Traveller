@@ -1,3 +1,4 @@
+
 import axios from "axios"
 
 class Destiantion{
@@ -24,7 +25,7 @@ Object.entries(data).forEach(([key, value]) => {
     });
 
   
-          const response = await axios.post(`${this.url}/home/addbannerslide`,formData, {
+          const response = await axios.post(`${this.url}/admin/addbannerslide`,formData, {
             headers: {
               'Content-Type': 'multipart/form-data',
             },
@@ -34,15 +35,43 @@ Object.entries(data).forEach(([key, value]) => {
       } catch (error) {
          if(error.response){
             console.log("server responed:",error.response)
-            return null
+            return error.response
+
          }
          else if(error.request){
-            console.log("client side error ", error.message);
+            // console.log("client side error ", error.request);
+            console.log(error)
             return null
          }
-         else{
-            return null
-         }
+        
+      }
+    }
+
+    async getAllDestination(){
+        try {
+          const data = await axios.get(`${this.url}/admin/getalldestination`);
+          console.log("data",data)
+          return data;
+        } catch (error) {
+          if(error.response){
+            console.log("server side error",error.response)
+          }
+          console.log("error while fectching destination",error);
+         return null;
+        }
+    }
+
+    async getDestination(id){
+      try {
+        const data = await axios.get(`${this.url}/admin/getdestination/${id}`);
+        console.log("data",data)
+        return data;
+      } catch (error) {
+        if(error.response){
+          console.log("server side error",error.response)
+        }
+        console.log("error while fectching one destination",error);
+       return null;
       }
     }
 }
