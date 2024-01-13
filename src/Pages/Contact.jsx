@@ -1,8 +1,12 @@
 import React from 'react'
+import { ContactForm,Banner,NewsLetter } from '../Component/export'
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <>
+    <ContactForm/>
+    <NewsLetter/>
+    </>
   )
 }
 

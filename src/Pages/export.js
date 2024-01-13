@@ -6,5 +6,6 @@ import AdminLogin from "./admin/Login/AdminLogin";
 import Adminlayout from "../Component/Admin/Adminlayout";
 import AddDestination from "./admin/Add destination/AddDestination";
 import Contact from "./Contact";
+import About from "./About";
 
-export {Home,Destination,CharDham,ExploreMore,AdminLogin,Adminlayout,AddDestination,Contact}
+export {Home,Destination,CharDham,ExploreMore,AdminLogin,Adminlayout,AddDestination,Contact,About}

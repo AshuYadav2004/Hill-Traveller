@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Header, Footer } from './Component/export';
-import { Home, Destination, CharDham, ExploreMore, AdminLogin, Adminlayout, AddDestination, Contact } from './Pages/export';
+import { Home, Destination, CharDham, ExploreMore, AdminLogin, Adminlayout, AddDestination, Contact,About } from './Pages/export';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -42,6 +42,7 @@ function App() {
         <Route path='/charDham' element={<Layout><CharDham /></Layout>} />
         <Route path='/exploremore/:id' element={<Layout><ExploreMore /></Layout>} />
         <Route path="/contact" element={<Layout><Contact /></Layout>}/>
+        <Route path="/about" element={<Layout><About /></Layout>}/>
           {/* For the Admin route, do not include the Layout component */}
       <Route path='/admin' element={<AdminLogin />} />
         <Route path='/admin/home' element={<Adminlayout />} />
