@@ -29,7 +29,7 @@ const {
         
         <Layout>
           <Header style={{padding : 0, background : colorBgContainer}}>
-            <Button style={{position:"relative",zIndex:"3" ,background:"White"}}
+            <Button className='admin-nav-btn' style={{position:"relative",zIndex:"3" ,background:"white"}}
             onClick={()=> setClosed(!closed)}
             type='text' icon={
             closed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined/>

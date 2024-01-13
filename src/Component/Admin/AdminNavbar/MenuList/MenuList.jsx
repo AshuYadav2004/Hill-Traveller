@@ -15,7 +15,7 @@ function MenuList({darkThemes}) {
         title="Destination"
         >
         <Menu.Item key="task-1"><Link to='/admin/dashboard/add-destination'>Add Destinaion</Link></Menu.Item>
-        <Menu.Item key="task-2">Task 5</Menu.Item>
+        <Menu.Item key="task-2"><Link to='/admin/dashboard/view-all-destination'>View all Destination</Link></Menu.Item>
         <Menu.Item key="task-3">Task 4</Menu.Item>
         <Menu.SubMenu key="subtasks" title="Subtasks" >
             <Menu.Item key="subtask-1">
