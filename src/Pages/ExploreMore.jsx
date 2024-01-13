@@ -6,11 +6,12 @@ import { useParams } from 'react-router';
 
 function ExploreMore() {
   const [exploreData, setEexploreData] = useState([])
+  // console.log('destinaion', exploreData[0]["bannerData"])
   const id = useParams()
   console.log("here is the id",id.id)
   useEffect(()=>{
     (async ()=>{
-      const result = await destination.getDestination(id.id)
+      const result = await destination.getDestination(id.id);
       if(result.status === 200){
         setEexploreData(result.data.data)
       }
@@ -18,11 +19,15 @@ function ExploreMore() {
        toast.error("erro fetching data")
      }
     })()
-  },[])
-  console.log('destinaion',exploreData)
+  },[id.id])
+  useEffect(() => {
+    // Code to execute after exploreData has been updated
+    console.log('Destination:', exploreData[0]?.bannerData || exploreData);
+    // You can place additional code here that depends on exploreData
+  }, [exploreData]);
     // for banner data
     const Bannerdata = {
-      //  ...exploreData[0]['bannerData']
+      ...exploreData[0]?.bannerData || {}
       
       }
 
@@ -87,9 +92,9 @@ function ExploreMore() {
   return (
    <>
    <Banner BannerData={Bannerdata}/>
-   <MunnarWithUsSection data={{...exploreData[0].otherSectionData}}/>
+   <MunnarWithUsSection data={{...exploreData[0]?.otherSectionData || {}}}/>
    <ItineraryTab/>
-   <DayItinearies/>
+   <DayItinearies itineraries={exploreData[0]?.itineraries || []}/>
    <MakeItinerariesSections/>
    <TopPlacesSection slides={slidesForTopPlaces} sectionData={TopPlacesSectionData}/>
    {/* Rpeating the same comnponet again coz same patter don't mind the name it dose not matter */}

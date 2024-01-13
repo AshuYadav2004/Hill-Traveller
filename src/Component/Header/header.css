@@ -80,23 +80,23 @@ header .nav-item-btn {
 }
 
 header .nav-item-btn .nav-link{
-    padding: 6px !important;
+    padding: 10px !important;
     /* font-size: ; */
 }
 
 @media only screen and (max-width:875px){
     header .navbar .navbar-nav .nav-link {
         font-size: 11px;
-        padding: 10px !important;
+        padding: 8px !important;
         /* border: 2px solid; */
     }
     
     header .navbar-brand img {
-        width: 62px;
+        width: 82px;
     }
-    header .navbar .navbar-nav .nav-link {
-        font-size: 11px;
-        padding: 6px !important;
+    header .navbar .navbar-nav .nav-link .nav-item-btn{
+        font-size: 8px;
+        padding: 5px !important;
     }
     header .navbar-expand-md .navbar-nav .nav-item .form-control {
         padding: 5px 16px 4px 27px;

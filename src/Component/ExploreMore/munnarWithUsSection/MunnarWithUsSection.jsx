@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const MunnarWithUsSection = ({data}) => {
 
-  let content = data.description
+  let content = data?.description || []
     
     const [showFullContent, setShowFullContent] = useState(false);
 
@@ -87,7 +87,7 @@ const MunnarWithUsSection = ({data}) => {
                   </div>
                 </div>
               </div>
-              <div className="enquiry_btn">
+              <div className="enquiry_btn-now">
                 <button className="munnar-enquire-btn">
                   Enquire Now
                   <svg fill="currentColor" viewBox="0 0 24 24" className="icon">

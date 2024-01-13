@@ -46,36 +46,18 @@ section.itinerery_tab {
 }
 @media only screen and (min-width:481px) and (max-width:940px) {
     section.itinerery_tab {
-        margin-top: 65px;
-        border: 2px solid red;
+        margin-top: 40px;
     }
-    
-    .itineary_tab ul li {
-        margin: 15px 10px;
-    }
-   
-    
-    .itineary_tab ul li a {
-        background-color: #000000;
-        padding: 10px 21px;
-        color: #ffffff;
-        border-radius: 50px;
-        font-size: 25px;
-    }
-    
     .itineary_tab ul {
-        display: flex;
-        justify-content: center;
-        padding-left: 0;
-        width: 90%;
-        margin: 0px auto;
         flex-wrap: wrap;
-
+        justify-content: center;
+        width: 100%;
     }
-    
-    .itineary_tab ul li a.active {
-        background-color: #15678c;
-        color: #ffffff;
+    .itineary_tab ul li {
+        margin: 14px 5px;
+    }
+    .itineary_tab ul li a {
+        font-size: 16px;
     }
     
 }

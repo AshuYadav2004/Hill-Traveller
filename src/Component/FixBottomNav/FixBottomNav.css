@@ -5,14 +5,11 @@
     right: 20px;
     z-index: 9999;
   }
-  
- 
-
 
   .icon-wrp-risponsive {
     padding: 10px;
-    background: crimson;
+    /* background: crimson; */
     margin: 4px;
     border-radius: 10px;
-    color: white;
+    /* color: white; */
   }

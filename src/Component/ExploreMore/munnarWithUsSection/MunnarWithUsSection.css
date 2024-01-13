@@ -207,8 +207,15 @@
     .munnar_us .munnar_child {
         width: 32%;
     }
-    .munnar-enquire-btn{
-        border: 2px solid red;
-        margin-left: 70px;
+    
+    .flex_direction{
+      flex-direction: column-reverse;
+    }
+
+    .enquiry_btn-now{
+      width: 100%;
+    }
+    .enquiry_btn-now button{
+      margin: auto;
     }
   }
