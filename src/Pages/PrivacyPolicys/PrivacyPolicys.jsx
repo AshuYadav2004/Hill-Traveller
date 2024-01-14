@@ -13,7 +13,7 @@ function PrivacyPolicy() {
                 Privacy Policy{" "}
                 <img
                   className="red_circle"
-                  src="/img/itineraries-listing/circle_red.png"
+                  src="/utlity-imgs/circle_red.png"
                   alt=""
                 />
               </h3>

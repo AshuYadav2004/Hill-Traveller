@@ -1,6 +1,7 @@
 import React from 'react';
 import './Luxrysection.css'
 
+
 const LuxuryEscapeSection = () => {
   return (
     <section className="luxury-escape">

@@ -10,6 +10,8 @@ import ViewAllDestination from "./admin/View-all-destination/viewAllDestination"
 import About from "./About";
 import { ViewAllCards } from "../Component/export";
 import PrivacyPolicy from "./PrivacyPolicys/PrivacyPolicys";
+import TermsAndConditions from "./TermsAndConditions/TermsAndConditions";
+import RefundPolicy from "./Refund/RefundPolicy";
 
 
-export {Home,Destination,CharDham,ExploreMore,AdminLogin,Adminlayout,AddDestination,Contact,ViewAllDestination,About,ViewAllCards,PrivacyPolicy}
+export {Home,Destination,CharDham,ExploreMore,AdminLogin,Adminlayout,AddDestination,Contact,ViewAllDestination,About,ViewAllCards,PrivacyPolicy,TermsAndConditions,RefundPolicy}

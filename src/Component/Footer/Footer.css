@@ -146,14 +146,12 @@ footer {
 @media screen and (max-width: 480px) {
       
     
-    .Footer {
+    footer {
         padding: 0px;
         align-items: end;
         text-align: center;
         margin-top: 45px;
-        /* border: 2px solid red; */
     }
-
     .footer-data p {
         width: 100%;
         padding: 10px 0px;
@@ -172,4 +170,42 @@ footer {
         padding-bottom: 13px;
         justify-content: center;
     }
+    .fix-footer-icon a img {
+        width: 33px;
+        margin: 0px 10px;
+    }
+    .icon-wrp:nth-child(1) {
+        width: 50%;
+        border-right: 1px solid;
+        padding: 9px 0px;
+    }
+    .fix-footer-wrp p {
+        font-family: 'SpaceGrotesk';
+        font-size: 15px;
+        line-height: 17px;
+        width: 89%;
+        padding: 10px 0px;
+        margin: 0px auto;
+    }
+    section.end-fix-footer {
+        display: none;
+    }
+    .fix-footer-risponsive {
+        display: block;
+        position: fixed;
+        bottom: 28px;
+        right: 20px;
+        z-index: 9999;
+    }
+    .icon-wrp-risponsive img {
+        width: 40px;
+        /*   padding: 4px; */
+        margin-bottom: 0px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        box-shadow: rgb(0 0 0 / 22%) 0px 10px 50px
+    }
 }
+
+
+

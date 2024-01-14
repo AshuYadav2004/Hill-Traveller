@@ -77,6 +77,17 @@ background-color: rgb(4, 144, 238);
     .img-conatainer h3{
       text-align: center;
       font-size: 14px !important;
-      background-color: red;
+      /* background-color: red; */
     }
+  }
+
+
+  @media screen and (max-width:480px) {
+    .arrow-next{
+     display: none;
+   }
+   
+   .arrow-prev{
+  display: none;
+   }
   }

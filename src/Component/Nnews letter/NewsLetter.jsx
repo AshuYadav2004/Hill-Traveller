@@ -14,7 +14,7 @@ function NewsLetter() {
                 NEWSLETTERS{' '}
                 <img
                   className="red_circle"
-                  src="/utlity-imgs/itineraries-listing/circle_red.png"
+                  src="/utlity-imgs/circle_red.png"
                   alt=""
                 />
               </span>

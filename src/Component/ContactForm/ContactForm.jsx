@@ -12,7 +12,7 @@ const ContactForm = () => {
             <div className="heading">
               <h2>
                 Connect with us{' '}
-                <img className="red_circle" src="img/itineraries-listing/circle_red.png" alt="" />
+                <img className="red_circle" src="/utlity-imgs/circle_red.png" alt="" />
               </h2>
               <p>If you got any questions please do not hesitate to send us a message</p>
             </div>

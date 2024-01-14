@@ -7,7 +7,7 @@ function InspiredHeadingColumn() {
     <div className="uttrakhand-destination-heading">
       <div className="heading">
         <h2>
-          Most Visited Destination <img className="red_circle" src="/utlity-imgs/itineraries-listing/circle_red.png" alt="" />
+          Most Visited Destination <img className="red_circle" src="/utlity-imgs/circle_red.png" alt="" />
         </h2>
         <p>
           Uttarakhand, a northern state in India, is a treasure trove of natural beauty and spiritual significance.
