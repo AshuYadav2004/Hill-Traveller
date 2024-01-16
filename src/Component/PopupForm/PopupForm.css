@@ -91,8 +91,8 @@ input[type=submit]:hover {
 
 .bts-popup-container {
     position: relative;
-    width: 100%;
-    max-width: 90%;
+    width: 90%;
+    max-width: 60%;
     margin: 4em auto;
     background: #ffffff;
     border-radius: none;
@@ -103,8 +103,7 @@ input[type=submit]:hover {
     -ms-transform: translateY(-40px);
     -o-transform: translateY(-40px);
     transform: translateY(-40px);
-    /* Force Hardware Acceleration in WebKit */
-    /* -webkit-backface-visibility: hidden; */
+    -webkit-backface-visibility: hidden;
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     transition-property: transform;
@@ -220,4 +219,13 @@ input[type=submit]:hover {
     cursor: pointer;
     color: black;
     /* Other styles... */
+}
+
+
+
+@media screen and (max-width:385px) {
+ 
+.bts-popup-container {
+    max-width: 80%;
+}
 }

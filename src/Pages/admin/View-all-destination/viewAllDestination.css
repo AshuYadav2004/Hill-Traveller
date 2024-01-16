@@ -1,0 +1,6 @@
+.cards-covers{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 10px; */
+}

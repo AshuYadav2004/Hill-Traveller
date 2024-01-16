@@ -1,0 +1,183 @@
+
+.contact-us {
+    margin-top: 60px;
+}
+
+.contact-us .contact_head p {
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: Poppins-Medium;
+}
+
+.contact-us .contact_address {
+    margin-top: 50px;
+}
+
+.contact-us .contact_address ul li i {
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+.contact-us .contact_address ul li {
+    display: flex;
+    align-items: baseline;
+    font-size: 22px;
+    padding: 18px 0px;
+    font-family: 'SpaceGrotesk';
+}
+
+.contact-us .form-group {
+    margin: 10px 0px;
+}
+
+.contact-us .form_head {
+    margin-right: 80px;
+    margin-top: 30px;
+}
+
+.contact-us .form-group .form-control {
+    border: none;
+    border-bottom: 2px solid #000000;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: #000000;
+    opacity: 1;
+}
+
+.contact-us .form-group .form-control:focus {
+    box-shadow: none;
+    border: 0;
+    border-bottom: 2px solid #000000;
+}
+
+.contact-us .form-group .connect_with {
+    padding: 7px 40px;
+    background-color: #ff525d;
+    color: #ffffff;
+    border: none;
+}
+
+.contact-us .contact_map {
+    margin-top: 50px;
+    padding: 0px 80px 0px 45px;
+}
+
+.contact-us .contact_map iframe {
+    width: 100%;
+    height: 390px;
+    border-radius: 15px;
+}
+
+/* -----------------------contact us page css end-----------------------  */
+
+/* -----------------------about us page css start ----------------------- */
+
+
+@media screen and (max-width:480px) {
+    .contact-us {
+        margin-top: 40px;
+    }
+    .contact-us .contact_head p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .contact-us .contact_address {
+        margin-top: 20px;
+    }
+    .contact-us .form_head {
+        margin-right: 0;
+        margin-top: 0px;
+    }
+    .contact-us .contact_address ul li i {
+        margin-right: 20px;
+        font-size: 18px;
+        width: 10px;
+    }
+    .contact-us .contact_address ul {
+        padding-left: 0;
+    }
+    .contact-us .contact_address ul li {
+        font-size: 18px;
+        padding: 5px;
+    }
+    .contact-us .contact_map {
+        margin-top: 20px;
+        padding: 0px 20px;
+    }
+    .contact-us .contact_map iframe {
+        height: 290px;
+        border-radius: 8px;
+    }
+    .contact-us .form-group .connect_with {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width:481px) and (max-width:640px) {
+    .contact-us {
+        margin-top: 40px;
+    }
+    .contact-us .contact_head p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .contact-us .contact_address {
+        margin-top: 20px;
+    }
+    .contact-us .form_head {
+        margin-right: 0;
+        margin-top: 0px;
+    }
+    .contact-us .contact_address ul li i {
+        margin-right: 20px;
+        font-size: 18px;
+        width: 10px;
+    }
+    .contact-us .contact_address ul {
+        padding-left: 0;
+    }
+    .contact-us .contact_address ul li {
+        font-size: 18px;
+        padding: 5px;
+    }
+    .contact-us .contact_map {
+        margin-top: 20px;
+        padding: 0px 20px;
+    }
+    .contact-us .contact_map iframe {
+        height: 290px;
+        border-radius: 8px;
+    }
+    .contact-us .form-group .connect_with {
+        font-size: 14px;
+    }
+    .heading span.left-align {
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width:800px) and (max-width:991px){
+    .contact-us .contact_address ul {
+        padding-left: 0;
+    }
+    .contact-us .form_head {
+        margin-right: 0;
+    }
+    .contact-us .contact_map {
+        padding: 0;
+    }
+    .contact-us .contact_map iframe {
+        height: 240px;
+    }
+    .contact-us .contact_head p {
+        line-height: 25px;
+    }
+
+}
+
+.wast-icons{
+    margin: 10px;
+}

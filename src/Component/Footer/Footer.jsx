@@ -52,10 +52,10 @@ const Footer = () => {
               <h5>Who we are?</h5>
               <ul>
                 <li>
-                  <Link to="/about-us">About us</Link>
+                  <Link to="/about">About us</Link>
                 </li>
                 <li>
-                  <Link to="/contact-us">Contact</Link>
+                  <Link to="/contact">Contact</Link>
                 </li>
                 <li>
                   <Link to="/privacypolicy">Privacy Policy</Link>

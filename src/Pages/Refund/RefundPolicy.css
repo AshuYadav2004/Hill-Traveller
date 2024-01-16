@@ -1,0 +1,11 @@
+@media screen and (max-width:560px) {
+    .career_details .career_child a {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+.red_circle {
+    width: 8px;
+    margin-left: 5px;
+}

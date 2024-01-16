@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import logo from "../../assets/images/logo.png/";
 import { FaSearch, FaBars } from 'react-icons/fa';
 
+
 function Header() {
 
   let navData = [{

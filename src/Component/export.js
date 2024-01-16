@@ -20,6 +20,11 @@ import MakeItinerariesSections from "./DESTINATION/makeItinerariesSection/makeIt
 import TopPlacesSection from "./ExploreMore/MostVistedDestination/TopPlacesSection/TopPlacesSection";
 import AdminNavbar from "./Admin/AdminNavbar/AdminNavbar";
 import Loader from "./Loader/Loader";
+import ContactForm from "./ContactForm/ContactForm";
+import AboutSection1 from "./About/AboutSection1/AboutSection1";
+import ViewAllCards from "./ViewAllCards/ViewAllCards";
+import Pagination from "./Pagination/Pagination";
 
 
-export{Header,Slider,HolidaySection,WhychooseUsSection,InspiredSection,WorkingSection,LuxuryEscapeSection,HappyCustomerSection,BestForYouSection,FaqSection,NewsLetter,Footer,Banner,Showcard,ShowAllDestination,MunnarWithUsSection,ItineraryTab,DayItinearies,MakeItinerariesSections,TopPlacesSection,AdminNavbar,Loader}
+
+export{Header,Slider,HolidaySection,WhychooseUsSection,InspiredSection,WorkingSection,LuxuryEscapeSection,HappyCustomerSection,BestForYouSection,FaqSection,NewsLetter,Footer,Banner,Showcard,ShowAllDestination,MunnarWithUsSection,ItineraryTab,DayItinearies,MakeItinerariesSections,TopPlacesSection,AdminNavbar,Loader,ContactForm,AboutSection1,ViewAllCards,Pagination}

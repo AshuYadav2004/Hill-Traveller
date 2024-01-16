@@ -60,7 +60,7 @@ section.best-for-you {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     font-family: Poppins-Regular;
-    background: rgb(0, 0, 0);
+    /* background: rgb(0, 0, 0); */
     color: white;
     top: -11px;
     border-bottom: 1px solid;
@@ -69,7 +69,7 @@ section.best-for-you {
 }
 
 .select2-container--default .select2-selection--single {
-    background-color: #000;
+    /* background-color: #000; */
     border: none;
     border-bottom: 2px solid white;
     border-radius: 0px;
@@ -78,7 +78,7 @@ section.best-for-you {
 }
 
 .select2-container--default .select2-selection--single {
-    background-color: #000;
+    /* background-color: #000; */
     border: none;
     border-bottom: 2px solid white;
     border-radius: 0px;
@@ -130,7 +130,7 @@ section.best-for-you {
 
 .best-for-you .let-us-find-form .form-select {
     border-bottom: 2px solid #ffffff !important;
-    background-color: #000;
+    /* background-color: #000; */
     background-image: url(../img/Arrow\ 4.png);
     border-radius: 0px;
     border: none;
@@ -139,7 +139,7 @@ section.best-for-you {
 
 .best-for-you .let-us-find-form .form-control .form-select:focus {
     color: #ffffff;
-    background: black;
+    /* background: black; */
 }
 
 .best-for-you .let-us-find-form .form-btn {
@@ -151,7 +151,7 @@ section.best-for-you {
     text-align: center;
     text-decoration: none;
     color: #ffffff;
-    font-family: 'SpaceGrotesk';
+    /* font-family: 'SpaceGrotesk'; */
     background: #FF525D;
     padding: 10px 30px;
     border-radius: 4px;
@@ -169,10 +169,7 @@ section.best-for-you {
     .best-for-you .best-for-you-heading .heading h2 {
         text-align: center;
     }
-    .heading span {
-        margin-left: 150px;
-       
-    };
+    
     .best-for-you .best-for-you-heading .heading p {
         width: 100%;
         padding-top: 10px;
@@ -183,7 +180,7 @@ section.best-for-you {
         width: 100%;
     }
     .best-for-you .let-us-find-form {
-        background: black;
+        /* background: black; */
         padding: 26px 25px;
         border-radius: 10px;
         color: white;
@@ -263,4 +260,31 @@ section.best-for-you {
     .enquire_popup .field {
         margin-top: 15px;
     }
+}
+
+
+
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1088px;
+
+    
+}
+}
+
+@media screen and (max-width: 550px) {
+    .best-for-you .best-for-you-heading {
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .best-for-you .best-for-you-heading .heading{
+        width: 100%;
+        display : flex;
+        justify-content : center;
+        align-items : center;
+        text-align: center;
+        flex-direction: column;
+    }
+
 }

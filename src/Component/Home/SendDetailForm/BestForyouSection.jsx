@@ -9,7 +9,7 @@ const BestForYouSection = () => {
             <div className="col-lg-6">
               <div className="best-for-you-heading">
                 <div className="heading">
-                  <span className="left-align">Reach Us <img className="red_circle" src="utlity-imgs/itineraries-listing/circle_red.png" alt="" /></span>
+                  <span className="left-align">Reach Us <img className="red_circle" src="/utlity-imgs/circle_red.png" alt="" /></span>
                   <h2>Have a coffee, Let us do the best for you </h2>
                   <p>Unveil the beauty of iconic landmarks, relish gourmet delights, and be pampered with impeccable hospitality. Reserve your passport to unforgettable moments</p>
                 </div>

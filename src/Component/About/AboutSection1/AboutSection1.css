@@ -1,0 +1,151 @@
+.main_about {
+    margin-top: 60px;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    margin-bottom: 100px;
+}
+
+.main_about .container {
+    max-width: 1200px;
+}
+
+.main_about:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 570px;
+    background-color: #000000;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    z-index: -1;
+}
+
+.main_about .main_about_pera {
+    margin-top: 30px;
+    font-size: 17px ;
+    padding: 0px 30px;
+}
+
+.main_about .main_img {
+    overflow: hidden;
+}
+
+.main_about .main_img:hover img {
+    transform: scale(1.03);
+}
+
+.main_about .main_img img {
+    width: 100%;
+    transition: .5s;
+}
+
+.main_about .connect_with_us {
+    margin-top: 30px;
+}
+
+.main_about .connect_with_us a {
+    padding: 10px 30px;
+    background-color: #ff525d;
+    color: #ffffff;
+    border: none;
+}
+
+
+@media screen and (max-width:420px) {
+    .main_about .main_about_pera {
+        margin-top: 10px;
+
+        font-size: 13px !important;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .inner_about .container .row:nth-child(2) {
+        margin-top: 30px;
+    }
+
+    .inner_about .container .row:nth-child(2) .heading {
+        padding-left: 0;
+    }
+
+    .inner_about .container .row:nth-child(3) {
+        margin-top: 30px;
+    }
+
+
+    .main_about .main_about_pera {
+        margin-top: 10px;
+
+        font-size: 14px ;
+        padding: 0;
+    }
+
+    .main_about {
+        margin-top: 40px;
+    }
+
+}
+
+
+@media only screen and (min-width:481px) and (max-width:640px) {
+    .inner_about .container .row:nth-child(2) {
+        margin-top: 30px;
+    }
+
+    .inner_about .container .row:nth-child(2) .heading {
+        padding-left: 0;
+    }
+
+    .inner_about .container .row:nth-child(3) {
+        margin-top: 30px;
+    }
+
+    .main_about .main_about_pera {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .main_about {
+        margin-top: 40px;
+    }
+
+}
+
+
+@media screen and (min-width:800px) and (max-width:1280px) {
+
+    /* .main_about .container {
+        max-width: 1100px;
+    } */
+
+}
+
+/* 
+@media only screen and (min-width:800px) and (max-width:991px) {
+
+
+    .main_about .container {
+        max-width: 700px;
+    }
+
+    .main_about:after {
+        height: 400px;
+    }
+}
+ */
+
+
+/* @media only screen and (min-width:641px) and (max-width:786px) {
+
+    .main_about .container {
+        max-width: 700px;
+    }
+
+    .main_about:after {
+        height: 400px;
+    }
+} */

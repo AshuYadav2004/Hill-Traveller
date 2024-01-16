@@ -28,7 +28,7 @@ const {
         </Sider>
         
         <Layout>
-          <Header style={{padding : 0, background : colorBgContainer}}>
+          <Header style={{padding : 0, background : colorBgContainer ,width : "100px"}}>
             <Button className='admin-nav-btn' style={{position:"relative",zIndex:"3" ,background:"white"}}
             onClick={()=> setClosed(!closed)}
             type='text' icon={
