@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Header, Footer } from './Component/export';
-import { Home, Destination, CharDham, ExploreMore, AdminLogin, Adminlayout, AddDestination, Contact, ViewAllDestination, About, PrivacyPolicy, TermsAndConditions ,RefundPolicy } from './Pages/export';
+import { Home, Destination, CharDham, ExploreMore, AdminLogin, Adminlayout, AddDestination, Contact, ViewAllDestination, About, PrivacyPolicy, TermsAndConditions ,RefundPolicy, AdminHome } from './Pages/export';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -59,8 +59,9 @@ function App() {
         <Route path="/refund-policy" element={<Layout><RefundPolicy /></Layout>} />
         {/* For the Admin route, do not include the Layout component */}
         <Route path='/admin' element={<AdminLogin />} />
-        <Route path='/admin/home' element={<Adminlayout />} />
+        <Route path='/admin/home' element={<Adminlayout><AdminHome /></Adminlayout>} />
         <Route path='/admin/dashboard/add-destination' element={<Adminlayout><AddDestination /></Adminlayout>} />
+        {/* <Route path='/admin/home' element={<Adminlayout><AdminHome /></Adminlayout>} /> */}
         <Route path='/admin/dashboard/view-all-destination' element={<Adminlayout><ViewAllDestination /></Adminlayout>} />
       </Routes>
     </>

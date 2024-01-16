@@ -12,6 +12,7 @@ import { ViewAllCards } from "../Component/export";
 import PrivacyPolicy from "./PrivacyPolicys/PrivacyPolicys";
 import TermsAndConditions from "./TermsAndConditions/TermsAndConditions";
 import RefundPolicy from "./Refund/RefundPolicy";
+import AdminHome from "./admin/AdminHome/AdminHome";
 
 
-export {Home,Destination,CharDham,ExploreMore,AdminLogin,Adminlayout,AddDestination,Contact,ViewAllDestination,About,ViewAllCards,PrivacyPolicy,TermsAndConditions,RefundPolicy}
+export {Home,Destination,CharDham,ExploreMore,AdminLogin,Adminlayout,AddDestination,Contact,ViewAllDestination,About,ViewAllCards,PrivacyPolicy,TermsAndConditions,RefundPolicy,AdminHome}
