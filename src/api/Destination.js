@@ -25,7 +25,7 @@ Object.entries(data).forEach(([key, value]) => {
     });
 
   
-          const response = await axios.post(`${this.url}/admin/addbannerslide`,formData, {
+          const response = await axios.post(`${this.url}/admin/add-destination`,formData, {
             headers: {
               'Content-Type': 'multipart/form-data',
             },
@@ -72,6 +72,48 @@ Object.entries(data).forEach(([key, value]) => {
         }
         console.log("error while fectching one destination",error);
        return null;
+      }
+    }
+
+    async UpdateDestination(images,data,id){
+      try {
+       
+        console.error("in function",data)
+        const formData = new FormData();
+
+
+Object.entries(data).forEach(([key, value]) => {
+  
+  const serializedValue = typeof value === 'object' ? JSON.stringify(value) : value;
+
+  formData.append(key, serializedValue);
+});
+
+   
+    images.forEach((image) => {
+      formData.append(image.name, image.File);
+    });
+
+  
+          const response = await axios.put(`${this.url}/admin/update/${id}`,formData, {
+            headers: {
+              'Content-Type': 'multipart/form-data',
+            },
+          }) 
+          console.log("server response:",response)
+          return response
+      } catch (error) {
+         if(error.response){
+            console.log("server responed:",error.response)
+            return error.response
+
+         }
+         else if(error.request){
+            // console.log("client side error ", error.request);
+            console.log(error)
+            return null
+         }
+        
       }
     }
 }
