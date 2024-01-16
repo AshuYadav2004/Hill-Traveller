@@ -14,5 +14,7 @@ import TermsAndConditions from "./TermsAndConditions/TermsAndConditions";
 import RefundPolicy from "./Refund/RefundPolicy";
 import AdminHome from "./admin/AdminHome/AdminHome";
 
+import UpdateDestination from "./admin/UpdatDestination/UpdateDestination";
 
-export {Home,Destination,CharDham,ExploreMore,AdminLogin,Adminlayout,AddDestination,Contact,ViewAllDestination,About,ViewAllCards,PrivacyPolicy,TermsAndConditions,RefundPolicy,AdminHome}
+
+export {Home,Destination,CharDham,ExploreMore,AdminLogin,Adminlayout,AddDestination,Contact,ViewAllDestination,About,ViewAllCards,PrivacyPolicy,TermsAndConditions,RefundPolicy,UpdateDestination,AdminHome}

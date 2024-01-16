@@ -10,6 +10,7 @@ function AddDestination() {
     // for checking 
    const [InputNum,setInputNum] = useState(0);
     const [Images,SetImages] = useState([]);
+    console.log("images",Images)
     const [catagory,SetCatagory] = useState('');
     const [Bannerdata,SetBannerData] = useState({
         heading:"",
@@ -268,7 +269,7 @@ function AddDestination() {
       <textarea placeholder={`Day${i}Description`} name={`Day${i}`} required onChange={(e)=>{
         setUpdateDescription(e.target.value, handleDayItinearies(e))
        
-      }}></textarea>
+      }} value={DayItinearies[`Day${i}`]['description']}></textarea>
       </fieldset>
             </div>
                 

@@ -23,7 +23,7 @@ function ExploreMore() {
   useEffect(() => {
     // Code to execute after exploreData has been updated
     console.log('Destination:', exploreData[0]?.bannerData || exploreData);
-    // You can place additional code here that depends on exploreData
+    
   }, [exploreData]);
     // for banner data
     const Bannerdata = {

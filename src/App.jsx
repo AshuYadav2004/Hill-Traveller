@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Header, Footer } from './Component/export';
-import { Home, Destination, CharDham, ExploreMore, AdminLogin, Adminlayout, AddDestination, Contact, ViewAllDestination, About, PrivacyPolicy, TermsAndConditions ,RefundPolicy, AdminHome } from './Pages/export';
+
+import { Home, Destination, CharDham, ExploreMore, AdminLogin, Adminlayout, AddDestination, Contact,ViewAllDestination, About, PrivacyPolicy, TermsAndConditions ,RefundPolicy, AdminHome,UpdateDestination} from './Pages/export';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -61,9 +62,15 @@ function App() {
         <Route path='/admin' element={<AdminLogin />} />
         <Route path='/admin/home' element={<Adminlayout><AdminHome /></Adminlayout>} />
         <Route path='/admin/dashboard/add-destination' element={<Adminlayout><AddDestination /></Adminlayout>} />
+
         {/* <Route path='/admin/home' element={<Adminlayout><AdminHome /></Adminlayout>} /> */}
+
+        <Route path='/admin/dashboard/view-all-destination' element={<Adminlayout><ViewAllDestination/></Adminlayout>} />
+        <Route path='/admin/dashboard/update/:id' element={<Adminlayout><UpdateDestination/></Adminlayout>} />
         <Route path='/admin/dashboard/view-all-destination' element={<Adminlayout><ViewAllDestination /></Adminlayout>} />
+
       </Routes>
+      
     </>
   );
 }
