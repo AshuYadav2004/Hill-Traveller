@@ -6,7 +6,7 @@ import { FaEdit, FaTrash } from 'react-icons/fa';
 const ViewAllCards = () => {
   return (
     
-    <div className="card" style={{ width: '18rem' }}>
+    <div data-aos="zoom-in" className="card" style={{ width: '18rem' }}>
     <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" className="card-img-top" alt="..." />
     <div className="card-body">
       <h5 className="card-title">Card title</h5>

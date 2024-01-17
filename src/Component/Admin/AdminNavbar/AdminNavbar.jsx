@@ -5,6 +5,7 @@ import "./AdminNavbar.css"
 import Logo from './Logo/logo';
 import MenuList from './MenuList/MenuList';
 import ToggleThemeBtn from './ToggleTheme/ToggleThemeBtn';
+import { ViewAllCards } from '../../export';
 const {Header, Sider} = Layout;
 
 function AdminNavbar() {
@@ -22,7 +23,7 @@ const {
 <>
    <Layout className='sidenav'>
     <Sider collapsed={closed} trigger={null} collapsible theme={darkTheme ? "dark" : "light"} className='side'>
-        <Logo/>
+        <Logo themeWhat={darkTheme}/>
         <MenuList darkThemes={darkTheme}/>
         <ToggleThemeBtn darkTheme={darkTheme} toggleTheme={toggleTheme}/>
         </Sider>
@@ -35,7 +36,7 @@ const {
             closed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined/>
             }/>
           </Header>
-
+            {/* <ViewAllCards/> */}
         </Layout>
        
    </Layout>

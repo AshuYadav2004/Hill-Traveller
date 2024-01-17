@@ -24,7 +24,7 @@ const Layout = ({ children }) => (
   <>
     <PopupForm />
     <FixBottomNav />
-    <EnquireFormModal />
+    {/* <EnquireFormModal /> */}
     <Header />
     {children}
     <Footer />
@@ -58,7 +58,6 @@ function App() {
         <Route path="/privacypolicy" element={<Layout><PrivacyPolicy /></Layout>} />
         <Route path="/term-condition" element={<Layout><TermsAndConditions /></Layout>} />
         <Route path="/refund-policy" element={<Layout><RefundPolicy /></Layout>} />
-        {/* For the Admin route, do not include the Layout component */}
         <Route path='/admin' element={<AdminLogin />} />
         <Route path='/admin/home' element={<Adminlayout><AdminHome /></Adminlayout>} />
         <Route path='/admin/dashboard/add-destination' element={<Adminlayout><AddDestination /></Adminlayout>} />

@@ -1,13 +1,15 @@
 import React from 'react'
 import './Logo.css'
-import {FireFilled} from '@ant-design/icons'
 
-function Logo() {
+
+function Logo({themeWhat}) {
   return (
     <div className='logo'>
-        <div className='logo-icon'>
-            <FireFilled/>
+        <div className='ProfilePhoto'>
+          <img src="/utlity-imgs/profilePhoto.png" alt="" />
+       
         </div>
+   <p className={`${themeWhat ? 'darkTheme' :'lightTheme' }`}>Ashutosh Yadav</p>
     </div>
   )
 }

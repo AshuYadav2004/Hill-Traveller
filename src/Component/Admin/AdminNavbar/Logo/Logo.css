@@ -3,16 +3,30 @@
     justify-content: center;
     align-items: center;
     color: #ffff;
-    padding: 10px;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
 }
 
-.logo-icon{
+.ProfilePhoto{
     width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    background-color: rgb(28, 17, 0.88);
+    margin-bottom: 4px;
 }
+
+.ProfilePhoto img{
+    width: 100%;
+}
+
+.logo p{
+    font-size: 13px;
+    margin: 0px;
+}
+
+.logo .darkTheme{
+    color: #ffff;
+}
+
+.logo .lightTheme{
+    color: #000000;
+}
+

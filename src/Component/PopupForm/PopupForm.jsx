@@ -10,8 +10,8 @@ function PopupForm() {
         popup.classList.remove('is-visible'); 
     }
     return (
-        <div className="bts-popup is-visible" role="alert">
-        <div className="bts-popup-container">
+        <div className="bts-popup is-visible"  role="alert">
+        <div className="bts-popup-container" data-aos="zoom-in">
             <div className="row">
                 <div className="col-lg-6">
                     <img src="/utlity-imgs/popup-banner.jpg" alt="Popup Banner" />

@@ -2,5 +2,12 @@
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
+
     /* margin: 10px; */
+}
+
+
+.cards-covers .card{
+    margin: 6px;
 }

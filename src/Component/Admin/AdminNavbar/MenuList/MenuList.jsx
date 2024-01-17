@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function MenuList({darkThemes}) {
   return (
     <Menu className='menu-bar' theme={darkThemes ? "dark" : "light"} mode='inline' >
-        <Menu.Item key="home" icon={<HomeOutlined/>}>Home</Menu.Item>
+        <Menu.Item key="home" icon={<HomeOutlined/>}><Link to='/admin/home'>Home</Link></Menu.Item>
 
         <Menu.Item key="activity" icon={<AppstoreOutlined/>}>Actvity</Menu.Item>
         <Menu.SubMenu key="subtasks"
@@ -38,7 +38,7 @@ function MenuList({darkThemes}) {
 
         </Menu.SubMenu>
         <Menu.Item key="payment" icon={<PayCircleOutlined/>}>Payment</Menu.Item>
-        <Menu.Item key="Setting" icon={<SettingOutlined/>}>Papa</Menu.Item>
+        <Menu.Item key="Setting" icon={<SettingOutlined/>}>Log out</Menu.Item>
     </Menu>
   )
 }
